@@ -1,0 +1,24 @@
+Update log
+------------------------------------------------------------------------
+06/2010
+------------------------------------------------------------------------
++  In step2, use relative vdw energy for the conformer vdw prune
+------------------------------------------------------------------------
+06-18-2010
++  don't add the above to mcce2.5, need more tests.
++  now depth, only consider delphi, so apbs has the same del_run
+   since only use the delphi_grid
+   need to add apbs_grid later, although they are the same now.
+
+
+12-09-2010
++  split vdw and ele pairwise interaction from residues in mfe
++  corect the random number generate problem in h optimization
++  corect the the hydroxyl optimization which actually not be done before (torsion problem)
++  always read the head1.lst for step2, it's better for the quick gold run
++  output the pdb file and headlist of each rotamer making step in directory "rot"
++  use env.s2_vdw to scale the vdw energy in step2 including:
+     sas term in get_vdw0.c
+     vdw      in vdw_conf_fast in vdw_fast.c for vdw0, vdw1
+     vdw      in Evdw_conf2conf for over_vdw (pruning)
+     vdw      in vdw_conf in vdw_conf.c for the relaxation
