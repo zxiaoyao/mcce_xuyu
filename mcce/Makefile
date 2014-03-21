@@ -38,7 +38,7 @@ $(LIB): $(OBJ)
 
 all:	$(LIB)
 	$(CC) $(CFLAGS) -o mcce mcce.c $(LIB) -lgdbm -lm -lz
-	rm -f *.o
+#	rm -f *.o
 	
 clean:
 	rm -f *.o
