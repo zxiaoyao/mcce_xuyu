@@ -70,24 +70,25 @@
 extern GDBM_FILE param_db;    /* defined by db_open() */
 
 int param_sav(char *key1, char *key2, char *key3, void *value, int s)
-{  datum pkey, pvalue;
-   char key[MAXCHAR_LINE];
-   char sbuff[MAXCHAR_LINE];
+{
+	datum pkey, pvalue;
+	char key[MAXCHAR_LINE];
+	char sbuff[MAXCHAR_LINE];
 
-   /* convert 3 key strings to one key, leading and ending spaces stripped */
-   strip(key, key1);
-   strip(sbuff, key2); strcat(key, sbuff);
-   strip(sbuff, key3); strcat(key, sbuff);
+	/* convert 3 key strings to one key, leading and ending spaces stripped */
+	strip(key, key1);
+	strip(sbuff, key2); strcat(key, sbuff);
+	strip(sbuff, key3); strcat(key, sbuff);
 
-   /* condtruct key, value pair */
-   pkey.dptr = key;
-   pkey.dsize = strlen(key);
-   pvalue.dptr = value;
-   pvalue.dsize = s;    /* The data size is passed in rather measured by strlen().
-                         * When a generic pointer was passed in, the variable type
-                         * was lost.     It became not reliable to detect the data
-                         * length by the terminating NULL character,  thought most
-                         * time strlen(value) would return the right size. */
+	/* condtruct key, value pair */
+	pkey.dptr = key;
+	pkey.dsize = strlen(key);
+	pvalue.dptr = (char *) value;
+	pvalue.dsize = s;    /* The data size is passed in rather measured by strlen().
+	 * When a generic pointer was passed in, the variable type
+	 * was lost.     It became not reliable to detect the data
+	 * length by the terminating NULL character,  thought most
+	 * time strlen(value) would return the right size. */
 
-   return gdbm_store(param_db, pkey, pvalue, GDBM_REPLACE);
+	return gdbm_store(param_db, pkey, pvalue, GDBM_REPLACE);
 }

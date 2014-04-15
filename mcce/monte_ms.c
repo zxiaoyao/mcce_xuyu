@@ -296,7 +296,7 @@ int monte()
         E_base = get_base();
         
         /* get a microstate */
-        state = realloc(state, n_free*sizeof(int));
+        state = (int *) realloc(state, n_free*sizeof(int));
         for (j=0; j<n_free; j++)
             state[j] = free_res[j].conf[rand() / (RAND_MAX/free_res[j].n + 1)];
         
@@ -944,7 +944,7 @@ void group_confs()
         }
         if (free_conf) {       /* free_conf stores number of free conformers in this residue */
             n_free++;
-            free_res = realloc(free_res, n_free * sizeof(RESIDUE));
+            free_res = (RESIDUE *) realloc(free_res, n_free * sizeof(RESIDUE));
             free_res[n_free-1].n = free_conf;
             free_res[n_free-1].conf = (int *) malloc(free_conf*sizeof(int));
             
@@ -965,7 +965,7 @@ void group_confs()
         }
         else {
             n_fixed++;
-            fixed_res = realloc(fixed_res, n_fixed * sizeof(RESIDUE));
+            fixed_res = (RESIDUE *) realloc(fixed_res, n_fixed * sizeof(RESIDUE));
             fixed_res[n_fixed-1].n = all_res[kr].n;
             fixed_res[n_fixed-1].conf = (int *) malloc(all_res[kr].n*sizeof(int));
             
@@ -1091,7 +1091,7 @@ void mk_neighbors()
             }
             if (big) {
                 biglist[kr].n++;
-                biglist[kr].res = realloc(biglist[kr].res, biglist[kr].n*sizeof(int));
+                biglist[kr].res = (int *) realloc(biglist[kr].res, biglist[kr].n*sizeof(int));
                 biglist[kr].res[biglist[kr].n-1] = ir;
             }
         }
@@ -2236,8 +2236,8 @@ int enumerate(int i_ph_eh)
     printf("bFactor: %.3f\n", b);
     fflush(fp);
     
-    E_states = malloc(nstate*sizeof(float));
-    occ_states = malloc(nstate*sizeof(float));
+    E_states = (float *) malloc(nstate*sizeof(float));
+    occ_states = (float *) malloc(nstate*sizeof(float));
     
     istate = 0;
     E_min = E_state = get_E();  /* get microstate energy */
@@ -2393,21 +2393,23 @@ int cmp_conftype(CONFTYPE t1, CONFTYPE t2)
 }
 
 CONFTYPE get_conftype(CONF conf)
-{  CONFTYPE typeid;
-   strcpy(typeid.resName, conf.resName);
-   typeid.chainID = conf.chainID;
-   typeid.iCode = conf.iCode;
-   typeid.resSeq = conf.resSeq;
-   typeid.e = conf.e;
-   typeid.H = conf.H;
-   if (conf.uniqID[3] == 'D' && conf.uniqID[4] == 'M') typeid.DM = 't';
-   else typeid.DM = '\0';
-   return typeid;
+{
+	CONFTYPE typeid;
+	strcpy(typeid.resName, conf.resName);
+	typeid.chainID = conf.chainID;
+	typeid.iCode = conf.iCode;
+	typeid.resSeq = conf.resSeq;
+	typeid.e = conf.e;
+	typeid.H = conf.H;
+	if (conf.uniqID[3] == 'D' && conf.uniqID[4] == 'M') typeid.DM = 't';
+	else typeid.DM = '\0';
+	return typeid;
 }
 
 void update_Sconvergence()
 /* This function actually computes the entropy of each comformer type */
-{  int i, pstart, pend;
+{
+	int i, pstart, pend;
    CONFTYPE newID;
    pstart = 0; /* pointer to the line of conflist of the first conformer */
    pend = 1;   /* pointer to the line of the next new conf type */

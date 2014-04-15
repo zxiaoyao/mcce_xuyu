@@ -1,3 +1,5 @@
+SRCDIR = src
+
 SRC     =  all.c       ddvv.c          geom_3v_onto_3v.c  ins_res.c         strip.c\
 app.c       del_conf.c      geom_apply.c       line_2v.c         vdotv.c\
 avv.c       del_prot.c      geom_inverse.c     load_all_param.c  vector_normalize.c\
@@ -23,7 +25,7 @@ HEADER	= mcce.h
 
 $(OBJ): $(HEADER)
 
-CC      = gcc
+CC      = g++
 CFLAGS  = -g -Wall
 
 .c.o:
@@ -38,7 +40,7 @@ $(LIB): $(OBJ)
 
 all:	$(LIB)
 	$(CC) $(CFLAGS) -o mcce mcce.c $(LIB) -lgdbm -lm -lz
-#	rm -f *.o
+	rm -f *.o
 	
 clean:
 	rm -f *.o

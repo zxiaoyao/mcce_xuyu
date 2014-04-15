@@ -115,8 +115,8 @@ int get_connect12_conf(int i_res, int i_conf, PROT prot)
                                 }
                             }
 
-                            param_sav(err_msg1, "", "", "", 0);
-                            param_sav(err_msg2, "", "", "", 0);
+                            param_sav(err_msg1, "", "", (void *) "", 0);
+                            param_sav(err_msg2, "", "", (void *) "", 0);
                                 
                             debug_fp = fopen(env.debug_log, "a");
                             fprintf(debug_fp,"%s\n",err_msg1);
@@ -140,8 +140,8 @@ int get_connect12_conf(int i_res, int i_conf, PROT prot)
                             }
                         }
                         
-                        param_sav(err_msg1, "", "", "", 0);
-                        param_sav(err_msg2, "", "", "", 0);
+                        param_sav(err_msg1, "", "", (void *) "", 0);
+                        param_sav(err_msg2, "", "", (void *) "", 0);
                         
                         debug_fp = fopen(env.debug_log, "a");
                         fprintf(debug_fp,"%s\n",err_msg1);
@@ -188,8 +188,8 @@ int get_connect12_conf(int i_res, int i_conf, PROT prot)
                             }
                         }
                         
-                        param_sav(err_msg1, "", "", "", 0);
-                        param_sav(err_msg2, "", "", "", 0);
+                        param_sav(err_msg1, "", "", (void *) "", 0);
+                        param_sav(err_msg2, "", "", (void *) "", 0);
                         
                         debug_fp = fopen(env.debug_log, "a");
                         fprintf(debug_fp,"%s\n",err_msg1);
@@ -296,7 +296,7 @@ int get_connect12_conf(int i_res, int i_conf, PROT prot)
                         continue;
                     }
                     
-                    param_sav(err_msg1, "", "", "", 0);
+                    param_sav(err_msg1, "", "", (void *) "", 0);
                     
                     debug_fp = fopen(env.debug_log, "a");
                     fprintf(debug_fp,"%s\n",err_msg1);
@@ -320,7 +320,7 @@ int get_connect12_conf(int i_res, int i_conf, PROT prot)
                         continue;
                     }
                     
-                    param_sav(err_msg1, "", "", "", 0);
+                    param_sav(err_msg1, "", "", (void *) "", 0);
                     
                     debug_fp = fopen(env.debug_log, "a");
                     fprintf(debug_fp,"%s\n",err_msg1);

@@ -27,7 +27,7 @@ int relax_water(PROT prot) {
                     
                     CONF conf;
                     conf.n_atom = iconf_p->n_atom;
-                    conf.atom  = malloc(conf.n_atom*sizeof(ATOM));
+                    conf.atom  = (ATOM *) malloc(conf.n_atom*sizeof(ATOM));
                     cpy_conf(&conf,iconf_p);
                     for (i_atom=0;i_atom<conf.n_atom;i_atom++) {
                         if (!conf.atom[i_atom].on) continue;

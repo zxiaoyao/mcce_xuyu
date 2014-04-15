@@ -83,6 +83,7 @@ int energies()
 
 
 	/* Load step 2 output pdb file */
+	// real estate
 	time_start = time(NULL);
 	printf("   Load step 2 output file %s...\n", STEP2_OUT);
 	if (!(fp=fopen(STEP2_OUT, "r"))) {

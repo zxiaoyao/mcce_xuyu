@@ -16,7 +16,7 @@ typedef struct {
 } GRID;  /* using a structure to pass grid space data instead of using global variables - Yifan */
 
 int  insAtomToConf(CONF *conf, int ins);
-void calc_gsize();
+void calc_gsize(GRID* grid_p);
 void alloc_3d_array (int x_size, int y_size, int z_size, GRID* grid_p);
 void free_3d_array(int x_size, int y_size, int z_size, GRID* grid_p);
 int  fill_grid(PROT prot, GRID* grid_p);

@@ -40,6 +40,11 @@
 #include <string.h>
 #include "mcce.h"
 
+/**
+ * Load all the tpl files in a directory.
+ * @param dirname name of the directory.
+ * @return exit status.
+ */
 int load_all_param(char *dirname)
 {  int i;
    STRINGS files;

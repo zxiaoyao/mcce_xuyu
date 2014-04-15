@@ -5,6 +5,14 @@
 
 extern int rm_comment(char *target, char *str);
 
+/**
+ * Validate a tpl file.
+ * By:
+ * 	1. Length of the line, which should be large enough to contain all the keys.
+ * 	2. No '\t' is used, instead only spaces should be used.
+ * @param fname name of tpl file.
+ * @return exit status.
+ */
 int check_tpl(char *fname) {
     FILE *fp;                              /* handler of the loaded parameter file */
     char sbuff[MAXCHAR_LINE];              /* string buffer */
@@ -32,7 +40,7 @@ int check_tpl(char *fname) {
         }
         
         /* if the line is shorter than the total length of 3 keys,
-        * then it has no value, we proceed to the next line */
+         * then it has no value, we proceed to the next line */
         if (strlen(line) < (LEN_KEY1+LEN_KEY2+LEN_KEY3)) continue;
         for(i=strlen(line)-1;i>=0;i--) {
             if (line[i]=='\t') {
@@ -53,5 +61,8 @@ int check_tpl(char *fname) {
             return 0;
         }
     }
+
+    fclose(fp);
+
     return 0;
 }

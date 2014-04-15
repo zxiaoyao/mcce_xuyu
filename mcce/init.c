@@ -8,66 +8,68 @@
 ENV env;
 
 int init()
-{   FILE *fp;
-time_t now;
-float kscale;
+{
+	FILE *fp;
+	time_t now;
+	float kscale;
 
-printf("   Load run control file \"%s\"...\n", FN_RUNPRM); fflush(stdout);
-if (get_env()) {printf("   FATAL: init(): \"failed initializing.\"\n"); return USERERR;}
-else {printf("   Done\n\n"); fflush(stdout);}
+	printf("   Load run control file \"%s\"...\n", FN_RUNPRM); fflush(stdout);
+	if (get_env()) {printf("   FATAL: init(): \"failed initializing.\"\n"); return USERERR;}
+	else {printf("   Done\n\n"); fflush(stdout);}
 
-printf("   Tentatively load local param file \"%s\"...", env.new_tpl); fflush(stdout);
-if (env.do_premcce) remove(env.new_tpl);
-if ((fp=fopen(env.new_tpl, "r"))) {
-	fclose(fp);
-	if (load_param(env.new_tpl)) {
-		printf("\n   FATAL: init(): Failed loading file \"%s\".\n", env.new_tpl);
-		return USERERR;
+	printf("   Tentatively load local param file \"%s\"...", env.new_tpl); fflush(stdout);
+	if (env.do_premcce) remove(env.new_tpl);
+
+	if ((fp=fopen(env.new_tpl, "r"))) {
+		fclose(fp);
+		if (load_param(env.new_tpl)) {
+			printf("\n   FATAL: init(): Failed loading file \"%s\".\n", env.new_tpl);
+			return USERERR;
+		}
+		printf("   File loaded.\n");
 	}
-	printf("   File loaded.\n");
-}
-else printf("   No such file, ignore.\n");
-printf("   Done\n\n");
-fflush(stdout);
+	else printf("   No such file, ignore.\n");
+	printf("   Done\n\n");
+	fflush(stdout);
 
-printf("   Load parameters from directory \"%s\" ... \n", env.param); fflush(stdout);
-if (load_all_param(env.param)) {printf("   FATAL: init(): \"failed.\"\n"); return USERERR;}
-else {printf("   Done\n\n"); fflush(stdout);}
+	printf("   Load parameters from directory \"%s\" ... \n", env.param); fflush(stdout);
+	if (load_all_param(env.param)) {printf("   FATAL: init(): \"failed.\"\n"); return USERERR;}
+	else {printf("   Done\n\n"); fflush(stdout);}
 
-printf("   Load linear free energy correction parameters from \"%s\"...", env.extra);fflush(stdout);
-if ((fp=fopen(env.extra, "r"))) {
-	printf("%s\n", env.extra);
-	fclose(fp);
-	if (load_param(env.extra)) {
-		printf("\n   FATAL: init(): Failed loading file \"%s\".\n", env.extra);
-		return USERERR;
+	printf("   Load linear free energy correction parameters from \"%s\"...", env.extra);fflush(stdout);
+	if ((fp=fopen(env.extra, "r"))) {
+		printf("%s\n", env.extra);
+		fclose(fp);
+		if (load_param(env.extra)) {
+			printf("\n   FATAL: init(): Failed loading file \"%s\".\n", env.extra);
+			return USERERR;
+		}
+		printf("   File loaded.\n");
 	}
-	printf("   File loaded.\n");
-}
-else printf("   No such file, ignore.\n");
-printf("   Done\n\n");
-fflush(stdout);
+	else printf("   No such file, ignore.\n");
+	printf("   Done\n\n");
+	fflush(stdout);
 
-/* Order of scale values:
- * 1. default value from env.epsilon_prot
- * 2. tpl file (usually extra.tpl)
- */
-kscale = 1.0/env.epsilon_prot; /* scaling factor based on dielectric constant */
+	/* Order of scale values:
+	 * 1. default value from env.epsilon_prot
+	 * 2. tpl file (usually extra.tpl)
+	 */
+	kscale = 1.0/env.epsilon_prot; /* scaling factor based on dielectric constant */
 
-if (param_get("SCALING", "VDW0", "", &env.scale_vdw0))  env.scale_vdw0   = 1.0*kscale;
-if (param_get("SCALING", "VDW1",  "", &env.scale_vdw1)) env.scale_vdw1   = 1.0*kscale;
-if (param_get("SCALING", "VDW",   "", &env.scale_vdw)) env.scale_vdw     = 1.0*kscale;
-if (param_get("SCALING", "TORS",  "", &env.scale_tor)) env.scale_tor     = 1.0*kscale;
-if (param_get("SCALING", "ELE",   "", &env.scale_ele)) env.scale_ele     = 1.0;
-if (param_get("SCALING", "DSOLV", "", &env.scale_dsolv)) env.scale_dsolv = 1.0;
+	if (param_get("SCALING", "VDW0", "", &env.scale_vdw0))  env.scale_vdw0   = 1.0*kscale;
+	if (param_get("SCALING", "VDW1",  "", &env.scale_vdw1)) env.scale_vdw1   = 1.0*kscale;
+	if (param_get("SCALING", "VDW",   "", &env.scale_vdw)) env.scale_vdw     = 1.0*kscale;
+	if (param_get("SCALING", "TORS",  "", &env.scale_tor)) env.scale_tor     = 1.0*kscale;
+	if (param_get("SCALING", "ELE",   "", &env.scale_ele)) env.scale_ele     = 1.0;
+	if (param_get("SCALING", "DSOLV", "", &env.scale_dsolv)) env.scale_dsolv = 1.0;
 
-remove(env.debug_log);
-remove(env.progress_log);
+	remove(env.debug_log);
+	remove(env.progress_log);
 
-now = time(NULL);
-srand(now);
+	now = time(NULL);
+	srand(now);
 
-return 0;
+	return 0;
 }
 
 
@@ -217,7 +219,6 @@ int get_env()
 
 	/* user values */
 	while (fgets(sbuff, sizeof(sbuff), fp)) {
-		printf("%s", sbuff);
 		if (strstr(sbuff, "(INPDB)")) {
 			strcpy(env.inpdb, strtok(sbuff, " "));
 		}

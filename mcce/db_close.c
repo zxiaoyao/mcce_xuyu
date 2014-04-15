@@ -60,11 +60,13 @@
 #include <gdbm.h>
 #include "mcce.h"
 
-extern GDBM_FILE param_db; /* defined by db_open() */
+/* both defined by db_open() */
+extern GDBM_FILE param_db;
 extern char gdbm_file[256];
 
 int db_close()
-{  gdbm_close(param_db);   /* close the param database */
-   remove(gdbm_file);     /* delete temporary file */
-   return 0;
+{
+	gdbm_close(param_db);   /* close the param database */
+	remove(gdbm_file);     /* delete temporary file */
+	return 0;
 }

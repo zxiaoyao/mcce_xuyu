@@ -17,10 +17,10 @@ Input and Output:
 cpep.pdb                                                    (INPDB)
 
 Steps:
-t        step 1: pre-run, pdb-> mcce pdb                    (DO_PREMCCE)
-t        step 2: make rotatmers                             (DO_ROTAMERS)
+f        step 1: pre-run, pdb-> mcce pdb                    (DO_PREMCCE)
+f        step 2: make rotatmers                             (DO_ROTAMERS)
 t        step 3: do energy calculations                     (DO_ENERGY)
-t        step 4: monte carlo sampling                       (DO_MONTE)
+f        step 4: monte carlo sampling                       (DO_MONTE)
 ==============================================================================
 
 0        sidechain optimization: 0=mcce, 1=P.Comte's GA     (SIDECHAIN_OPT)
@@ -108,9 +108,9 @@ step 3:
 1.4      Radius of the probe                                (RADIUS_PROBE)
 2.0      Ion radius                                         (IONRAD)
 0.15     Salt                                               (SALT)
-./                                                          (#PBE_FOLDER)
+./                                                          (PBE_FOLDER)
 ../bin/delphi-64 DelPhi executable             (DELPHI_EXE)
-/home/x/Documents/mcce2.5/delphi-64 DelPhi executable             (#DELPHI_EXE)
+/Users/xzhu/Compute/delphi/DelPhi_Linux_DP_F95/delphi95     DelPhi executable             (#DELPHI_EXE)
 ../bin/apbs APBS executable                 (APBS_EXE)
 
 step 4:

@@ -2,6 +2,13 @@
 #include <string.h>
 #include "mcce.h"
 
+
+/**
+ * Get the string without the leading and ending spaces
+ * @param target new string without space or '\t'.
+ * @param str orignal string.
+ * @return number of spaces stripped.
+ */
 int strip(char *target, char *str)
 /* get the string without the leading and ending spaces, return spaces stripped */
 {  int len = strlen(str);

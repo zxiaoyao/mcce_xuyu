@@ -172,14 +172,14 @@ int relax_h(PROT prot)
             
             if (i_subres == -1) {
                 res_p->n_subres++;
-                res_p->subres = realloc(res_p->subres,res_p->n_subres*sizeof(SUBRES));
+                res_p->subres = (SUBRES *) realloc(res_p->subres,res_p->n_subres*sizeof(SUBRES));
                 i_subres = res_p->n_subres-1;
                 memset(&res_p->subres[i_subres],0,sizeof(SUBRES));
             }
             
             res_p->subres[i_subres].n_conf++;
             n_conf = res_p->subres[i_subres].n_conf;
-            res_p->subres[i_subres].conf = realloc(res_p->subres[i_subres].conf,n_conf*sizeof(void *));
+            res_p->subres[i_subres].conf = (CONF **) realloc(res_p->subres[i_subres].conf,n_conf*sizeof(void *));
             res_p->subres[i_subres].conf[n_conf-1] = &res_p->conf[i_conf];
             res_p->conf[i_conf].i_subres_res = i_subres;
             res_p->conf[i_conf].i_conf_subres = n_conf-1;
@@ -190,7 +190,7 @@ int relax_h(PROT prot)
     /** calculate a prot.nc * prot.nc matrix for the vdw interaction
      * only the interactions between conformers of the first conformer of sub residues are calculated
      */
-    pair_vdw = malloc(prot.nc * sizeof(float *));
+    pair_vdw = (float **) malloc(prot.nc * sizeof(float *));
     memset(pair_vdw, 0, prot.nc * sizeof(float *));
     for (i_res=0; i_res<prot.n_res; i_res++) {
         if (!prot.res[i_res].cal_vdw) continue;
@@ -198,7 +198,7 @@ int relax_h(PROT prot)
             ic = prot.res[i_res].subres[i_subres].conf[0]->i_conf_prot;
             i_conf = prot.res[i_res].subres[i_subres].conf[0]->i_conf_res;
 
-            pair_vdw[ic] = malloc(prot.nc * sizeof(float));
+            pair_vdw[ic] = (float *) malloc(prot.nc * sizeof(float));
             for (j_res=0; j_res<prot.n_res; j_res++) {
                 if (!prot.res[j_res].cal_vdw) continue;
                 for (j_subres=0; j_subres<prot.res[j_res].n_subres; j_subres++) {
@@ -222,7 +222,7 @@ int relax_h(PROT prot)
 
         // first neighbor is the residue itself.
         ires_p->n_ngh = 1;
-        ires_p->ngh = malloc(sizeof(RES *));
+        ires_p->ngh = (RES **) malloc(sizeof(RES *));
         ires_p->ngh[0] = &prot.res[i_res];
         
         /* Get residue neighbor list */
@@ -280,7 +280,7 @@ int relax_h(PROT prot)
             }
             else if (ngh_found) {
                 ires_p->n_ngh++;
-                ires_p->ngh = realloc(ires_p->ngh, ires_p->n_ngh*sizeof(RES *));
+                ires_p->ngh = (RES **) realloc(ires_p->ngh, ires_p->n_ngh*sizeof(RES *));
                 ires_p->ngh[ires_p->n_ngh-1] = jres_p;
             }
         }
@@ -313,7 +313,7 @@ int relax_h(PROT prot)
                 if (!prot.res[i_res].conf[i_conf].atom[i_atom].on) continue;
                 na++;
                 ka = na-1;
-                all_atoms = realloc(all_atoms, na*sizeof(RELAX_ATOM));
+                all_atoms = (RELAX_ATOM *) realloc(all_atoms, na*sizeof(RELAX_ATOM));
                 memset(&all_atoms[ka], 0, sizeof(RELAX_ATOM));
                 prot.res[i_res].conf[i_conf].atom[i_atom].i_atom_prot = ka;
                 
@@ -345,7 +345,7 @@ int relax_h(PROT prot)
                             //if (!i_conf) continue;
                             if (prot.res[i_res].n_hyd_pos) {
                                 //printf("water prot.res[i_res].n_hyd_pos %d\n",prot.res[i_res].n_hyd_pos);
-                                all_atoms[ka].counter = malloc(prot.res[i_res].n_hyd_pos * prot.res[i_res].n_hyd_pos * prot.res[i_res].n_hyd_pos * sizeof(int));
+                                all_atoms[ka].counter = (int *) malloc(prot.res[i_res].n_hyd_pos * prot.res[i_res].n_hyd_pos * prot.res[i_res].n_hyd_pos * sizeof(int));
                                 memset(all_atoms[ka].counter,0,prot.res[i_res].n_hyd_pos * prot.res[i_res].n_hyd_pos * prot.res[i_res].n_hyd_pos * sizeof(int));
                             }
 
@@ -390,7 +390,7 @@ int relax_h(PROT prot)
                         if (!i_conf) {
                         	if (prot.res[i_res].n_hyd_pos) {
                         		//printf("prot.res[i_res].n_hyd_pos %d\n",prot.res[i_res].n_hyd_pos);
-                        		all_atoms[ka].counter = malloc(prot.res[i_res].n_hyd_pos*sizeof(int));
+                        		all_atoms[ka].counter = (int *) malloc(prot.res[i_res].n_hyd_pos*sizeof(int));
                         		memset(all_atoms[ka].counter,0,prot.res[i_res].n_hyd_pos*sizeof(int));
                         	}
                         }
@@ -460,7 +460,7 @@ int relax_h(PROT prot)
         }
 
         // Get the factor matrix between every two atoms of the neighbor residues, which are to be relaxed.
-        factor_matrix = malloc(n_atom * sizeof(void*));
+        factor_matrix = (float **) malloc(n_atom * sizeof(void*));
         memset(factor_matrix, 0, n_atom * sizeof(void*));
         for (i_ngh=0; i_ngh<prot.res[i_res].n_ngh; i_ngh++) {
             for (i_conf=0; i_conf<prot.res[i_res].ngh[i_ngh]->n_conf; i_conf++) {
@@ -475,7 +475,7 @@ int relax_h(PROT prot)
                     iatom_p = &prot.res[i_res].ngh[i_ngh]->conf[i_conf].atom[i_atom];
                     if (!iatom_p->on) continue;
                     if (!all_atoms[iatom_p->i_atom_prot].move) continue;
-                    factor_matrix[all_atoms[iatom_p->i_atom_prot].k_relax] = malloc(n_atom * sizeof(float));
+                    factor_matrix[all_atoms[iatom_p->i_atom_prot].k_relax] = (float *) malloc(n_atom * sizeof(float));
                     
                     n_connect13 = 0;
                     n_connect14 = 0;
@@ -683,7 +683,7 @@ int relax_h(PROT prot)
                     atom_p = &prot.res[i_res].ngh[i_ngh]->conf[0].atom[i_atom];
                     if (!atom_p->on) continue;
                     n_relax++;
-                    relax_atoms = realloc(relax_atoms, n_relax*sizeof(RELAX_ATOM *));
+                    relax_atoms = (RELAX_ATOM **) realloc(relax_atoms, n_relax*sizeof(RELAX_ATOM *));
                     relax_atoms[n_relax-1] = &all_atoms[atom_p->i_atom_prot];
                 }
                 
@@ -694,7 +694,7 @@ int relax_h(PROT prot)
                     atom_p = &prot.res[i_res].ngh[i_ngh]->conf_w->atom[i_atom];
                     if (!atom_p->on) continue;
                     n_relax++;
-                    relax_atoms = realloc(relax_atoms, n_relax*sizeof(RELAX_ATOM *));
+                    relax_atoms = (RELAX_ATOM **) realloc(relax_atoms, n_relax*sizeof(RELAX_ATOM *));
                     relax_atoms[n_relax-1] = &all_atoms[atom_p->i_atom_prot];
                 }
             }
