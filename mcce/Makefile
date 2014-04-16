@@ -27,7 +27,7 @@ HEADER	= mcce.h
 
 $(OBJ): $(HEADER)
 
-CC      = mpic++
+CC      = g++
 CFLAGS  = -g -Wall
 
 .c.o:
