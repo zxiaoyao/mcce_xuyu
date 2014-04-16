@@ -19,10 +19,10 @@ double free_unf(PROT prot);
 int curve_fitting(PROT prot);
 int monte_out(PROT prot, int n_titra);
 
-double  **pairwise;
+static double  **pairwise;
 RES     **flip_res;
 GROUP     **flip_group;
-long    idum;
+static long    idum;
 double  beta;
 
 int monte2()
@@ -38,7 +38,7 @@ int monte2()
     time_t   timer_start, timer_end;
 
     timer_start = time(NULL);
-    flip_res = malloc(env.monte_flips * sizeof(RES *));
+    flip_res = (RES **) malloc(env.monte_flips * sizeof(RES *));
     
     /* Load conflist */
     if (!env.monte_old_input) {
@@ -68,7 +68,7 @@ int monte2()
 
     for (i=0;i<env.monte_nstart;i++) ran2(&idum);
     for (ic=0;ic<prot.nc;ic++) {
-        prot.conf[ic]->occ_table = malloc(env.titr_steps * sizeof(float));
+        prot.conf[ic]->occ_table = (float *) malloc(env.titr_steps * sizeof(float));
     }
     
     /* pH/Eh titration */
@@ -100,7 +100,7 @@ int monte2()
         prot.E_free_unfold = free_unf(prot);
         
         prot_w = monte2_reduce(prot);
-        for (ic=0;ic<prot_w.nc;ic++) prot_w.conf[ic]->occ_table = malloc(sizeof(float));
+        for (ic=0;ic<prot_w.nc;ic++) prot_w.conf[ic]->occ_table = (float *) malloc(sizeof(float));
         
         i_red=0;
         while(1) {
@@ -130,7 +130,7 @@ int monte2()
             if (!prot_red.nc) break;
             monte2_get_biglist(prot_red);
             i_red++;
-            for (ic=0;ic<prot_w.nc;ic++) prot_w.conf[ic]->occ_table=realloc(prot_w.conf[ic]->occ_table,i_red*sizeof(float));
+            for (ic=0;ic<prot_w.nc;ic++) prot_w.conf[ic]->occ_table = (float *) realloc(prot_w.conf[ic]->occ_table,i_red*sizeof(float));
             
             fp = fopen(MC_OUT,"a"); fprintf(fp,"\nReduce = %3d, number of active residue: %4d, active conformer %5d\n",i_red,prot_red.n_res,prot_red.nc); fclose(fp);
             
@@ -407,7 +407,7 @@ PROT monte2_load_conflist(char *fname) {
     for (k_res=0;k_res<prot.n_res;k_res++) {
         for (k_conf=1;k_conf<prot.res[k_res].n_conf;k_conf++) {
             prot.nc++;
-            prot.conf = realloc(prot.conf, prot.nc*sizeof(void *));
+            prot.conf = (CONF **) realloc(prot.conf, prot.nc*sizeof(void *));
             prot.res[k_res].conf[k_conf].i_conf_prot = prot.nc-1;
             prot.conf[prot.res[k_res].conf[k_conf].i_conf_prot] = &prot.res[k_res].conf[k_conf];
         }
@@ -531,16 +531,16 @@ int monte2_load_pairwise(PROT prot)
                         }
                         if (i_miss_jc == n_miss_jc) {
                             n_miss_jc++;
-                            miss_jc = realloc(miss_jc,n_miss_jc*sizeof(int));
+                            miss_jc = (int *) realloc(miss_jc,n_miss_jc*sizeof(int));
                             miss_jc[i_miss_jc] = jc;
-                            n_miss_ic = realloc(n_miss_ic,n_miss_jc*sizeof(int));
+                            n_miss_ic = (int *) realloc(n_miss_ic,n_miss_jc*sizeof(int));
                             n_miss_ic[i_miss_jc] = 0;
-                            miss_ic = realloc(miss_ic,n_miss_jc*sizeof(int *));
+                            miss_ic = (int **) realloc(miss_ic,n_miss_jc*sizeof(int *));
                             miss_ic[i_miss_jc] = NULL;
                         }
                         
                         n_miss_ic[i_miss_jc]++;
-                        miss_ic[i_miss_jc] = realloc(miss_ic[i_miss_jc],n_miss_ic[i_miss_jc]*sizeof(int));
+                        miss_ic[i_miss_jc] = (int *) realloc(miss_ic[i_miss_jc],n_miss_ic[i_miss_jc]*sizeof(int));
                         miss_ic[i_miss_jc][n_miss_ic[i_miss_jc]-1]=ic;
                     }
                 }
@@ -721,7 +721,7 @@ PROT monte2_load_pk1out(char *pk1out, char *dconf2) {
     for (k_res=0;k_res<prot.n_res;k_res++) {
         for (k_conf=1;k_conf<prot.res[k_res].n_conf;k_conf++) {
             prot.nc++;
-            prot.conf = realloc(prot.conf, prot.nc*sizeof(void *));
+            prot.conf = (CONF **) realloc(prot.conf, prot.nc*sizeof(void *));
             prot.res[k_res].conf[k_conf].i_conf_prot = prot.nc-1;
             prot.conf[prot.nc-1] = &prot.res[k_res].conf[k_conf];
         }
@@ -778,7 +778,7 @@ void monte2_get_biglist(PROT prot) {
                     
                     if (fabs(pairwise[ic][jc])>env.big_pairwise) {
                         prot.res[i_res].n_ngh++;
-                        prot.res[i_res].ngh = realloc(prot.res[i_res].ngh, prot.res[i_res].n_ngh*sizeof(void *));
+                        prot.res[i_res].ngh = (RES **) realloc(prot.res[i_res].ngh, prot.res[i_res].n_ngh*sizeof(void *));
                         prot.res[i_res].ngh[prot.res[i_res].n_ngh-1] = &prot.res[j_res];
                         added = 1;
                         break;
@@ -861,7 +861,7 @@ PROT monte2_reduce(PROT prot) {
         }
     }
     
-    prot_red.conf = malloc(prot_red.nc*sizeof(void *));
+    prot_red.conf = (CONF **) malloc(prot_red.nc*sizeof(void *));
     ic = 0;
     for (i_res=0;i_res<prot_red.n_res;i_res++) {
         for (i_conf=1;i_conf<prot_red.res[i_res].n_conf;i_conf++) {
@@ -1091,7 +1091,7 @@ void do_free_energy(PROT *prot_p) {
     }
     if (!state_found) {
         prot_p->n_saved++;
-        prot_p->saved_states = realloc(prot_p->saved_states, prot_p->n_saved*sizeof(UNIQ_STATE));
+        prot_p->saved_states = (UNIQ_STATE *) realloc(prot_p->saved_states, prot_p->n_saved*sizeof(UNIQ_STATE));
         memmove(prot_p->saved_states+search2+1, prot_p->saved_states+search2, (prot_p->n_saved-search2-1)*sizeof(UNIQ_STATE));
         prot_p->saved_states[search2].sum_kc = sum_kc;
         prot_p->saved_states[search2].sum_krkc = sum_krkc;
@@ -1196,7 +1196,7 @@ int monte_out(PROT prot, int n_titra) {
             if (i_conf >= prot.res[i_res].n_conf) continue;
         }
         
-        prot.res[i_res].sum_crg = malloc(n_titra*sizeof(float));
+        prot.res[i_res].sum_crg = (float *) malloc(n_titra*sizeof(float));
         memset(prot.res[i_res].sum_crg,0,n_titra*sizeof(float));
         for (i_titra=0; i_titra<n_titra; i_titra++) {
             for (i_conf=1;i_conf<prot.res[i_res].n_conf;i_conf++) {
@@ -1209,11 +1209,11 @@ int monte_out(PROT prot, int n_titra) {
         }
         fprintf(fp, "\n");
     }
-    prot.H = malloc(n_titra*sizeof(float));
+    prot.H = (float *) malloc(n_titra*sizeof(float));
     memset(prot.H,0,n_titra*sizeof(float));
-    prot.e = malloc(n_titra*sizeof(float));
+    prot.e = (float *) malloc(n_titra*sizeof(float));
     memset(prot.e,0,n_titra*sizeof(float));
-    prot.sum_crg = malloc(n_titra*sizeof(float));
+    prot.sum_crg = (float *) malloc(n_titra*sizeof(float));
     memset(prot.sum_crg,0,n_titra*sizeof(float));
     for (i_titra=0; i_titra<n_titra; i_titra++) {
         for (i_res=0;i_res<prot.n_res;i_res++) {
@@ -1280,7 +1280,7 @@ int curve_fitting(PROT prot) {
     PKA  pka;
     float guessed_pK, guessed_n;
     int i_titra;
-    pH = malloc(env.titr_steps * sizeof(float));
+    pH = (float *) malloc(env.titr_steps * sizeof(float));
     
     /*
     for (i_res=0;i_res<prot.n_res;i_res++) {
@@ -1367,8 +1367,8 @@ PKA fitting(float guessed_pK, float guessed_n) {
     int   i, n_iter;
     PKA   pka;
     
-    param = malloc(3 * sizeof(float *));
-    for (i=0;i<3;i++) param[i] = malloc(2 * sizeof(float));
+    param = (float **) malloc(3 * sizeof(float *));
+    for (i=0;i<3;i++) param[i] = (float *) malloc(2 * sizeof(float));
 
     param[0][0] = guessed_pK;      param[0][1] = guessed_n;      chi2[0] = get_chi2(param[0]);
     param[1][0] = guessed_pK+0.01; param[1][1] = guessed_n;      chi2[1] = get_chi2(param[1]);
@@ -1419,7 +1419,7 @@ int gmonte_group(PROT *prot_p) {
     for (i_res=0;i_res<prot_p->n_res;i_res++) {
         if (prot_p->res[i_res].groupID == 0) {
             prot_p->n_group++;
-            prot_p->group = realloc(prot_p->group,prot_p->n_group*sizeof(GROUP));
+            prot_p->group = (GROUP *) realloc(prot_p->group,prot_p->n_group*sizeof(GROUP));
             i_group = prot_p->n_group-1;
             memset(&prot_p->group[i_group],0,sizeof(GROUP));
         }
@@ -1429,14 +1429,14 @@ int gmonte_group(PROT *prot_p) {
             }
             if (i_group == -1) {
                 prot_p->n_group++;
-                prot_p->group = realloc(prot_p->group,prot_p->n_group*sizeof(GROUP));
+                prot_p->group = (GROUP *) realloc(prot_p->group,prot_p->n_group*sizeof(GROUP));
                 i_group = prot_p->n_group-1;
                 memset(&prot_p->group[i_group],0,sizeof(GROUP));
             }
         }
         
         prot_p->group[i_group].n_res++;
-        prot_p->group[i_group].res = realloc(prot_p->group[i_group].res,prot_p->group[i_group].n_res*sizeof(void *));
+        prot_p->group[i_group].res = (RES **) realloc(prot_p->group[i_group].res,prot_p->group[i_group].n_res*sizeof(void *));
         prot_p->group[i_group].res[prot_p->group[i_group].n_res-1] = &prot_p->res[i_res];
     }
     
@@ -1454,7 +1454,7 @@ int gmonte_group(PROT *prot_p) {
                 }
                 if (i_subres == -1) {
                     prot_p->res[i_res].n_subres++;
-                    prot_p->res[i_res].subres = realloc(prot_p->res[i_res].subres,prot_p->res[i_res].n_subres*sizeof(SUBRES));
+                    prot_p->res[i_res].subres = (SUBRES *) realloc(prot_p->res[i_res].subres,prot_p->res[i_res].n_subres*sizeof(SUBRES));
                     i_subres = prot_p->res[i_res].n_subres-1;
                     memset(&prot_p->res[i_res].subres[i_subres],0,sizeof(SUBRES));
                 }
@@ -1466,14 +1466,14 @@ int gmonte_group(PROT *prot_p) {
                 }
                 if (i_subres == -1) {
                     prot_p->res[i_res].n_subres++;
-                    prot_p->res[i_res].subres = realloc(prot_p->res[i_res].subres,prot_p->res[i_res].n_subres*sizeof(SUBRES));
+                    prot_p->res[i_res].subres = (SUBRES *) realloc(prot_p->res[i_res].subres,prot_p->res[i_res].n_subres*sizeof(SUBRES));
                     i_subres = prot_p->res[i_res].n_subres-1;
                     memset(&prot_p->res[i_res].subres[i_subres],0,sizeof(SUBRES));
                 }
             }
             prot_p->res[i_res].subres[i_subres].n_conf++;
             n_conf = prot_p->res[i_res].subres[i_subres].n_conf;
-            prot_p->res[i_res].subres[i_subres].conf = realloc(prot_p->res[i_res].subres[i_subres].conf,n_conf*sizeof(void *));
+            prot_p->res[i_res].subres[i_subres].conf = (CONF **) realloc(prot_p->res[i_res].subres[i_subres].conf,n_conf*sizeof(void *));
             prot_p->res[i_res].subres[i_subres].conf[n_conf-1] = &prot_p->res[i_res].conf[i_conf];
         }
     }

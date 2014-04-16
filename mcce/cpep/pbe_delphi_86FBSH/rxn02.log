@@ -1,0 +1,491 @@
+    
+  ______________DelPhi V. 6.0 (f95)_______________  
+ |                                                | 
+ | A program to solve the PB equation             | 
+ | in 3D, using non-linear form, incorporating    | 
+ | many dielectric regions, multisalt ionic       | 
+ | strength, different probe radii, periodic      | 
+ | and focussing boundary conditions, utilizing   | 
+ | stripped optimum successive over-relaxation    | 
+ | and an improved algorithm for mapping the      | 
+ | Mol. Surface to the finite-Difference grid     | 
+ |                                                | 
+ |    If there is any question, please go to:     | 
+ |       http://compbio.clemson.edu/forum/        | 
+ |     June 2012,by DelPhi Development Team       | 
+ |_________________             __________________| 
+                   DelPhi V. 6.0                    
+   
+ Program started on 2014-04-15 at 12:14:48
+ opening parameter file fort.10
+ unknown input phimap formatPQR
+ epsin. ok    4.00
+ unknown frc format:   PBZ   AU
+ unknown phimap format:   PBZ   AU
+ nonexistence or unexpected end of radius file
+ This is correct in case there are ONLY objects,
+ or in case some specific delphi pdb format is used!
+ nonexistence or unexpected end of charge file
+ This is correct in case there are ONLY objects,
+ or in case some specific delphi pdb format is used!
+ assigning charges and radii...
+
+ opening formatted file:apbs.pqr
+ No DELPHI keyword, assuming Delphi Format number =           0
+ number of atoms read in =         1379  formatted
+ You are not reading from an objectfile!
+ Assuming having only molecules, and one medium
+ Direct mapping of epsilon: (0/1)(n/y)           1
+ time to read in and/or assign rad/chrg=      0.08 s
+ Object number           1  is a molecule
+ modifying midpoints using fort.27
+ Debye Lengths contained in the finite diff. box   -1.2036
+   
+ grid size                  :          65
+ percent of box to be filled:      129.81
+ scale,in grids/A :   2.00
+ xmin,xmax     (A):    16.235    34.882
+ ymin,ymax     (A):    -2.967    23.177
+ zmin,zmax     (A):    13.809    33.673
+ x,y,z range   (A):    18.647    26.144    19.864
+ system geometric center in (A):    25.558    10.105    23.741
+ grid  box is centered in (A)  :    31.878    17.802    25.667
+ object centre offset (gu)     :   777.000   777.000     0.000
+ outer dielectric              :  80.00
+ dielectric in medium number  0:  80.00
+ dielectric in medium number  1:   4.00
+ first kind salt concentration (M)       : 0.1500
+ valences salt 1 are                   1  and           1
+ second kind salt concentration (M)      : 0.0000
+ valences salt 2 are                   0  and           0
+ ionic strength (M)            : 0.1500
+ debye length (A)              : 7.9249
+ absolute temperature (K)      : 297.33
+ ion exclusion radius (A)      : 2.0000
+ probe radius facing water(A)  : 1.4000
+ probe radius, internal (A)    : 1.4000
+ boundary conditions           : focussing   
+ x,y,z periodic bc. and volt. drop flags: F F F F F F
+ # of linear iterations        : automatic
+ # of non-linear iterations    :         0
+ non-linear energy calculat.   : F
+ manual relaxation parameter   : F
+ ionic direct energy contribution: F
+ concentration map output      : F
+ spherical charge distbn.      : F
+ INSIGHT format output         : F
+ site potential output         : T
+ modified atom file output     : F
+ map file label                :
+qdiffxas: qdiffxs4 with an improved surfacing routine       
+ set to  read unformatted pdb file
+  convergence graph turned off
+  potential listings turned off
+  
+ !!! WARNING: part of system outside the box!
+ start vw surface at 12:14:48
+ Starting creating Van der Waals  Epsilon Map 
+  
+ Ending creating Van der Waals  Epsilon Map 
+ fill in re-entrant regions at 12:14:48
+ time elapsed :      0.06 s
+ boundary points facing continuum solvent=         5821
+ total number of boundary points before elab.=         5821
+ reading accessible surface arcs data from file  ARCDAT
+ no. of arc points read =        21677
+ grid for indexing accessible points =    1.400
+ bgp added m=        1210  bgp removed  mr =        2724
+ bgp added m=         139  bgp removed  mr =         499
+ bgp added m=          15  bgp removed  mr =          55
+ bgp added m=           0  bgp removed  mr =           6
+ no. cavity mid-points inaccessible to solvent =            0
+ after surface elaboration ibnum=         3901
+     and               ibnumsurf=         3901
+ scaling boundary grid points
+           0  points had to be assigned by global comparison
+ time to turn everything in is      0.13 s
+ number of charges coming from molecules            3
+   
+ number of atom coordinates read  :      1379
+ total number of assigned charges :         3
+ net assigned charge              :    0.0000
+ assigned positive charge         :    0.1200
+ centred at (gu)                  :   32.5430   32.2710   33.8110
+ assigned negative charge         :   -0.1200
+ centred at (gu)                  :   33.4580   33.7280   32.1880
+    
+ number of dielectric boundary points        3901
+ no. dielectric boundary points in salt =            0
+ no. charged boundary grid points =           0
+ iepsmp to db, and charging done at      0.21 s
+ number of grid points assigned charge          24
+  
+  setting boundary conditions
+  
+  
+ focussing boundary condition 
+ read from file
+ run01.phi
+  
+  
+  focussing potential map:
+       qdiffxas: qdiffxs4 with an improved surfacing routine
+ original scale (grids/A)      :    1.0000000000000000     
+ object centre at (A) :    31.878000000000000        17.802000000000000        25.667000000000002     
+  
+ pulling boundary values out of old potential map...
+  some initial phi values: 
+  midg,midg,1; midg,midg,igrid 
+ -0.26628E-02  0.29644E-02
+  midg,1,midg; midg,igrid,midg 
+  0.16314E-02 -0.12091E-02
+  1,midg,midg; igrid,midg,midg 
+  0.85684E-03 -0.49445E-03
+  
+ gauss-seidel spectral radius is    0.9963
+  
+ estimated iterations to convergence         132
+   
+ setup time was      0.15 s
+   
+ now iterating on 2014-04-15 at 12:14:48
+  
+  
+   rms-change     max change       #iterations
+  0.50454E-01  0.52848E+01 at      10 iterations
+  0.14300E-01  0.64777E+00 at      20 iterations
+  0.40481E-02  0.12320E+00 at      30 iterations
+  0.11434E-02  0.36026E-01 at      40 iterations
+  0.32604E-03  0.97769E-02 at      50 iterations
+  0.90390E-04  0.26560E-02 at      60 iterations
+  0.26163E-04  0.58427E-03 at      70 iterations
+  0.75130E-05  0.16266E-03 at      80 iterations
+  0.21459E-05  0.41354E-04 at      90 iterations
+  0.61213E-06  0.11822E-04 at     100 iterations
+  0.17565E-06  0.34089E-05 at     110 iterations
+  0.49803E-07  0.96140E-06 at     120 iterations
+  0.14364E-07  0.30974E-06 at     130 iterations
+ finished qdiffx linear iterations at: 12:14:49
+ total time elapsed so far:       0.12 s
+ total grid energy               :              3.9472 kt
+ self-reaction field energy      :             -2.3991 kt
+ total s.charge,no epsin carrying:              0.0000
+ corrected reaction field energy :             -0.0937 kt
+ total reaction field energy     :             -2.4928 kt
+ all required energy terms but grid and self_react.:             -0.0937kt
+ energy calculations done at      0.28 s
+   
+ writing potentials at given sites...
+   
+ coordinates, etc for potential output read from file fort.15
+   
+ potentials written to file run02.frc
+   
+ Pay attention, point out of the cube!!
+ Values:   19.176000000000002       -3.8960000000000008        26.293999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   18.531999999999996       -5.6060000000000016        25.479999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   17.485999999999997       -1.5060000000000002        26.207999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   17.125999999999998       -1.1159999999999997        24.129999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   18.832000000000001       0.86200000000000188        27.552000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   20.728000000000002       0.54599999999999937        29.193999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   14.868000000000002       -1.9579999999999984        27.759999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   15.274000000000001       -1.8939999999999984        29.863999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   14.073999999999998       -3.8859999999999957        27.259999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.770000000000003       0.22599999999999909        27.055999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.277999999999999       0.13799999999999812        24.969999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.238000000000000      -0.35600000000000165        28.787999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.8939999999999984       -2.4699999999999989        28.867999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.5319999999999965       0.59600000000000364        27.905999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.655999999999999       0.71399999999999864        31.605999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.7400000000000020       0.98000000000000398        32.527999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.292000000000002       -1.0859999999999985        33.315999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   14.164000000000001       -1.5459999999999994        32.779999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   11.521999999999998       -1.8380000000000010        35.001999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.258000000000003       -1.2539999999999978        25.937999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.881999999999998       -2.8719999999999999        24.677999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.0739999999999981       0.11200000000000188        24.785999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.6000000000000014       -2.3440000000000012        28.245999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.6000000000000014       -2.6799999999999997        27.553999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.5600000000000023      -0.87800000000000011        29.811999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.6599999999999966       -4.8900000000000006        29.355999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   11.506000000000000       -4.9540000000000006        30.123999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.5279999999999987       -6.5379999999999967        29.335999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.777999999999999       -1.5899999999999963        30.455999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.7800000000000011       -1.3859999999999957        27.601999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.539999999999999       0.39200000000000301        30.773999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.0420000000000016        3.2000000000003581E-002   28.267999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.9159999999999968       0.77400000000000091        25.417999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.1580000000000013       -1.8079999999999998        27.105999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.8040000000000020       -2.8260000000000005        28.421999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.1580000000000013       -3.2539999999999978        25.879999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.5919999999999987        8.0000000000026716E-003   25.349999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   4.6039999999999992       0.12599999999999767        25.549999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   14.475999999999999      -0.25000000000000000        28.994000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   15.076000000000001       -3.6880000000000024        29.007999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.481999999999999       -2.3819999999999979        25.811999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.659999999999997       -2.6300000000000026        26.913999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.810000000000002       -4.1259999999999977        24.605999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.317999999999998       0.16199999999999903        24.009999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   13.783999999999999        3.0000000000001137E-002   22.449999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.5420000000000016       0.37199999999999989        22.781999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.0940000000000012      -0.16799999999999926        24.267999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.1700000000000017       -1.3840000000000003        20.411999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.3780000000000001       -3.3659999999999997        20.589999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.7079999999999984      -0.58399999999999608        18.637999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   11.869999999999997      -0.67799999999999727        32.693999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.8920000000000030      -0.42000000000000171        33.431999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.758000000000003       0.98199999999999932        31.931999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.5899999999999963       -1.0880000000000010        33.717999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.293999999999997       -2.9519999999999982        33.889999999999993       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.1719999999999970      -0.43599999999999994        34.965999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.8539999999999992       -2.4979999999999976        29.977999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.8939999999999984       -4.2980000000000018        27.719999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.2580000000000027      -0.63799999999999812        28.917999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   4.8500000000000014      -0.28799999999999670        27.543999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.0940000000000012       0.15800000000000125        30.745999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   11.552000000000000       -4.2779999999999987        26.181999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   13.165999999999997       -2.3260000000000005        23.779999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.457999999999998       -6.4000000000000057E-002   26.335999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.328000000000003       0.31199999999999761        28.442000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.5219999999999985      -0.62400000000000233        25.605999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.1180000000000021      -0.84799999999999898        25.951999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.2819999999999965       -2.4399999999999977        26.823999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.8160000000000025      -0.49799999999999756        24.006000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.2280000000000015      -0.16199999999999903        28.442000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   4.7439999999999998      -0.15200000000000102        30.381999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   3.9739999999999966      -0.95799999999999841        27.101999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   13.457999999999998      -0.43399999999999750        27.223999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   15.366000000000000       -1.8599999999999994        30.827999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   16.100000000000001        7.3999999999998067E-002   31.397999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   16.802000000000000       -3.3459999999999965        31.393999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.624000000000002       -2.4239999999999995        32.209999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.927999999999997       -3.6920000000000002        33.913999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   11.314000000000000       -3.4119999999999990        30.829999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   11.368000000000002       0.19800000000000040        33.103999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.484000000000002       -8.8000000000000966E-002   35.037999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.6539999999999964        7.9999999999998295E-002   30.872000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.298000000000002       -3.3059999999999974        26.564000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.274000000000001       -1.1779999999999973        23.795999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.7319999999999993        7.8000000000002956E-002   26.985999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.3860000000000028      -0.59199999999999875        28.994000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.3200000000000003      -0.52400000000000091        25.353999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   4.7120000000000033       -2.4159999999999968        25.131999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   4.3079999999999998       0.96200000000000330        24.479999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.0979999999999990       -2.0279999999999987        27.567999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.5660000000000025       0.68200000000000216        24.311999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.7139999999999986      -0.67600000000000193        22.423999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.3239999999999981       -1.9359999999999999        23.117999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.8579999999999970      -0.32800000000000296        20.459999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.0020000000000024       0.39200000000000301        22.233999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.6439999999999984       0.32399999999999807        24.729999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   4.8599999999999994       0.54400000000000404        26.555999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   4.4620000000000033      -0.13599999999999568        23.181999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.4819999999999993      -0.31600000000000250        26.686000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.268000000000001       -1.1379999999999981        22.897999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.281999999999996       -1.3879999999999981        22.209999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.5559999999999974       0.78999999999999915        22.283999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.5660000000000025       -3.2239999999999966        21.635999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.6060000000000016       -3.2879999999999967        22.027999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.3819999999999979       -4.5640000000000001        20.395999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.8699999999999974      -0.76999999999999602        27.589999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.3100000000000023       0.91199999999999903        23.692000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.9759999999999991      -0.78399999999999892        22.423999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.4279999999999973      -0.96799999999999642        21.111999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   14.091999999999999       -1.3200000000000003        32.477999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   11.387999999999998       -2.8620000000000019        33.481999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   12.494000000000000      -0.28600000000000136        35.137999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   11.518000000000001       -4.5820000000000007        30.029999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.6839999999999975       -6.2899999999999991        27.930000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.4919999999999973       -5.5099999999999980        30.857999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.8419999999999987       0.94400000000000261        24.099999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.2580000000000027       -1.0519999999999996        24.299999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.4540000000000006       -3.2860000000000014        20.957999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.485999999999997      -0.88799999999999812        18.989999999999995       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.3179999999999978       -1.1599999999999966        19.689999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.1559999999999988      -0.62400000000000233        33.241999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   10.515999999999998       -2.8560000000000016        33.591999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.6219999999999999       -1.3359999999999985        33.461999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.9159999999999968      -0.28199999999999648        35.517999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.0679999999999978      -0.50799999999999557        27.317999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.2520000000000024       -1.4480000000000004        30.445999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.6619999999999990       0.72400000000000375        32.750000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.4560000000000031       -2.3119999999999976        27.139999999999993       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.1940000000000026       -1.6259999999999977        24.455999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   4.5660000000000025       0.15400000000000347        25.186000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.0820000000000007        2.1999999999998465E-002   30.427999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.1499999999999986       -2.0959999999999965        27.936000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   3.7139999999999986       0.80199999999999960        27.561999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.8160000000000025      -0.17000000000000171        31.113999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.0120000000000005       -2.5000000000000000        25.353999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.5979999999999990       0.11599999999999966        23.479999999999997       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   3.7299999999999969       0.40599999999999881        26.131999999999998       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.4720000000000013       -1.8500000000000014        23.461999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   7.7620000000000005       -1.7819999999999965        21.128000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.6619999999999990       0.69200000000000017        21.411999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.2199999999999989       0.61800000000000210        26.661999999999999       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   5.1079999999999970       -1.5259999999999962        24.193999999999996       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   6.6779999999999973       -2.9859999999999971        22.250000000000000       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   9.2220000000000013       -5.0399999999999991        22.163999999999994       Igrid:          65
+ Pay attention, point out of the cube!!
+ Values:   8.6539999999999964       -3.0540000000000020        19.645999999999994       Igrid:          65
+    
+ number of atom coordinates read  :         1379
+    
+ frc stuff now done at   0.0000000000000000     
+  -1.2248414748803005E-004
+  -1.2248414748803005E-004
+   
+ writing potential map in DELPHI format
+           8  -1.2248414748803005E-004
+  -1.2248414748803005E-004
+   
+ potential map written to file
+ run02.phi
+   
+   
+ total cpu time was       0.30 s
+   
+ DelPhi exited at 12:14:49

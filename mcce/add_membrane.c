@@ -230,7 +230,7 @@ int anchor2defined(PROT *prot_p, VECTOR *pos) {
                 ATOM *atom_p = &prot_p->res[i_res].conf[i_conf].atom[i_atom];
                 if (!atom_p->on) continue;
                 na++;
-                all_atoms = realloc(all_atoms, na*sizeof(ATOM *));
+                all_atoms = (ATOM **) realloc(all_atoms, na*sizeof(ATOM *));
                 all_atoms[na-1] = atom_p;
             }
         }

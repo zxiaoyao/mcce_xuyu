@@ -137,21 +137,21 @@ void setup_connect_res(PROT prot, int i_res) {
     FILE *debug_fp;
 
     /* setup connectivity for for all conformers in one residue */
-    prot.res[i_res].n_connect12 = calloc(prot.res[i_res].n_conf, sizeof(int *));
-    prot.res[i_res].connect12   = calloc(prot.res[i_res].n_conf, sizeof(int *));
-    prot.res[i_res].n_connect13 = calloc(prot.res[i_res].n_conf, sizeof(int *));
-    prot.res[i_res].connect13   = calloc(prot.res[i_res].n_conf, sizeof(int *));
-    prot.res[i_res].n_connect14 = calloc(prot.res[i_res].n_conf, sizeof(int *));
-    prot.res[i_res].connect14   = calloc(prot.res[i_res].n_conf, sizeof(int *));
+    prot.res[i_res].n_connect12 = (int **) calloc(prot.res[i_res].n_conf, sizeof(int *));
+    prot.res[i_res].connect12   = (ATOM ****) calloc(prot.res[i_res].n_conf, sizeof(int *));
+    prot.res[i_res].n_connect13 = (int **) calloc(prot.res[i_res].n_conf, sizeof(int *));
+    prot.res[i_res].connect13   = (ATOM ****) calloc(prot.res[i_res].n_conf, sizeof(int *));
+    prot.res[i_res].n_connect14 = (int **) calloc(prot.res[i_res].n_conf, sizeof(int *));
+    prot.res[i_res].connect14   = (ATOM ****) calloc(prot.res[i_res].n_conf, sizeof(int *));
 
     for (i_conf=0; i_conf<prot.res[i_res].n_conf; i_conf++) {
         if (!prot.res[i_res].conf[i_conf].n_atom) continue;
-        prot.res[i_res].n_connect12[i_conf] = calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(int));
-        prot.res[i_res].connect12[i_conf]   = calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(ATOM **));
-        prot.res[i_res].n_connect13[i_conf] = calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(int));
-        prot.res[i_res].connect13[i_conf]   = calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(ATOM **));
-        prot.res[i_res].n_connect14[i_conf] = calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(int));
-        prot.res[i_res].connect14[i_conf]   = calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(ATOM **));
+        prot.res[i_res].n_connect12[i_conf] = (int *) calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(int));
+        prot.res[i_res].connect12[i_conf]   = (ATOM ***) calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(ATOM **));
+        prot.res[i_res].n_connect13[i_conf] = (int *) calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(int));
+        prot.res[i_res].connect13[i_conf]   = (ATOM ***) calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(ATOM **));
+        prot.res[i_res].n_connect14[i_conf] = (int *) calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(int));
+        prot.res[i_res].connect14[i_conf]   = (ATOM ***) calloc(prot.res[i_res].conf[i_conf].n_atom, sizeof(ATOM **));
         
         for (i_atom=0; i_atom<prot.res[i_res].conf[i_conf].n_atom; i_atom++) {
             atom_p = &prot.res[i_res].conf[i_conf].atom[i_atom];

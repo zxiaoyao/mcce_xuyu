@@ -688,7 +688,7 @@ int initial_relaxation(PROT prot)
                 atom_p->i_conf_res  = i_conf;
                 atom_p->i_atom_conf = i_atom;
                 
-                all_atoms = realloc(all_atoms, na*sizeof(RELAX));
+                all_atoms = (RELAX *) realloc(all_atoms, na*sizeof(RELAX));
                 memset(&all_atoms[na-1],0,sizeof(RELAX));
                 all_atoms[na-1].r_orig = atom_p->xyz;
                 all_atoms[na-1].atom_p = atom_p;
@@ -762,7 +762,7 @@ int initial_relaxation(PROT prot)
             connect13 = prot.res[i_res].connect13[i_conf][i_atom];
             
             relax_atoms[i_relax].n_constr = n_connect12 + n_connect13;
-            relax_atoms[i_relax].constr_list = malloc(relax_atoms[i_relax].n_constr * sizeof(RELAX *));
+            relax_atoms[i_relax].constr_list = (RELAX **) malloc(relax_atoms[i_relax].n_constr * sizeof(RELAX *));
             for (i_connect=0; i_connect<n_connect12; i_connect++) {
                 int j_relax = all_atoms[connect12[i_connect]->i_atom_prot].i_relax;
                 if (j_relax == -1) {
@@ -790,7 +790,7 @@ int initial_relaxation(PROT prot)
                 }
             }
             
-            relax_atoms[i_relax].constr_dsq  = malloc(relax_atoms[i_relax].n_constr * sizeof(double));
+            relax_atoms[i_relax].constr_dsq  = (double *) malloc(relax_atoms[i_relax].n_constr * sizeof(double));
             for (i_const=0; i_const<relax_atoms[i_relax].n_constr; i_const++) {
                 relax_atoms[i_relax].constr_dsq[i_const] = ddvv(atom_p->xyz, relax_atoms[i_relax].constr_list[i_const]->atom_p->xyz);
             }
@@ -803,7 +803,7 @@ int initial_relaxation(PROT prot)
                 if (j_relax != -1) {
                     int ja;
                     relax_atoms[i_relax].n_ngh14++;
-                    relax_atoms[i_relax].ngh14 = realloc(relax_atoms[i_relax].ngh14, relax_atoms[i_relax].n_ngh14*sizeof(RELAX *));
+                    relax_atoms[i_relax].ngh14 = (RELAX **) realloc(relax_atoms[i_relax].ngh14, relax_atoms[i_relax].n_ngh14*sizeof(RELAX *));
                     ja = prot.res[i_res].connect14[i_conf][i_atom][i_connect]->i_atom_prot;
                     relax_atoms[i_relax].ngh14[relax_atoms[i_relax].n_ngh14-1] = &relax_atoms[all_atoms[ja].i_relax];
                 }
@@ -829,7 +829,7 @@ int initial_relaxation(PROT prot)
                 if (i_ngh<relax_atoms[i_relax].n_ngh14) continue;
                 
                 relax_atoms[i_relax].n_ngh++;
-                relax_atoms[i_relax].ngh = realloc(relax_atoms[i_relax].ngh, relax_atoms[i_relax].n_ngh*sizeof(RELAX *));
+                relax_atoms[i_relax].ngh = (RELAX **) realloc(relax_atoms[i_relax].ngh, relax_atoms[i_relax].n_ngh*sizeof(RELAX *));
                 relax_atoms[i_relax].ngh[relax_atoms[i_relax].n_ngh-1] = &relax_atoms[j_relax];
             }
         }
@@ -876,7 +876,7 @@ int initial_relaxation(PROT prot)
                 if (all_atoms[connect12[i_connect]->i_atom_prot].i_relax == -1) continue;
                 
                 relax_atoms[i_relax].n_rotate1++;
-                relax_atoms[i_relax].rotate1_lst = realloc(relax_atoms[i_relax].rotate1_lst, relax_atoms[i_relax].n_rotate1*sizeof(int));
+                relax_atoms[i_relax].rotate1_lst = (int *) realloc(relax_atoms[i_relax].rotate1_lst, relax_atoms[i_relax].n_rotate1*sizeof(int));
                 relax_atoms[i_relax].rotate1_lst[relax_atoms[i_relax].n_rotate1-1] = all_atoms[connect12[i_connect]->i_atom_prot].i_relax;
             }
             
@@ -900,7 +900,7 @@ int initial_relaxation(PROT prot)
                 if (all_atoms[connect12[i_connect]->i_atom_prot].i_relax == -1) continue;
                 
                 relax_atoms[i_relax].n_rotate2++;
-                relax_atoms[i_relax].rotate2_lst = realloc(relax_atoms[i_relax].rotate2_lst, relax_atoms[i_relax].n_rotate2*sizeof(int));
+                relax_atoms[i_relax].rotate2_lst = (int *) realloc(relax_atoms[i_relax].rotate2_lst, relax_atoms[i_relax].n_rotate2*sizeof(int));
                 relax_atoms[i_relax].rotate2_lst[relax_atoms[i_relax].n_rotate2-1] = all_atoms[connect12[i_connect]->i_atom_prot].i_relax;
             }
         }
@@ -1209,7 +1209,7 @@ void relaxation_setup(PROT prot)
                 atom_p->i_conf_res  = i_conf;
                 atom_p->i_atom_conf = i_atom;
                 
-                all_atoms = realloc(all_atoms, na*sizeof(RELAX));
+                all_atoms = (RELAX *) realloc(all_atoms, na*sizeof(RELAX));
                 memset(&all_atoms[na-1],0,sizeof(RELAX));
                 all_atoms[na-1].r_orig = atom_p->xyz;
                 all_atoms[na-1].atom_p = atom_p;
@@ -1244,7 +1244,7 @@ void relaxation_setup(PROT prot)
         connect13 = prot.res[i_res].connect13[i_conf][i_atom];
         
         all_atoms[ia].n_constr = n_connect12 + n_connect13;
-        all_atoms[ia].constr_list = malloc(all_atoms[ia].n_constr * sizeof(RELAX *));
+        all_atoms[ia].constr_list = (RELAX **) malloc(all_atoms[ia].n_constr * sizeof(RELAX *));
         for (i_connect=0; i_connect<n_connect12; i_connect++) {
             ja = connect12[i_connect]->i_atom_prot;
             all_atoms[ia].constr_list[i_connect] = &all_atoms[ja];
@@ -1254,7 +1254,7 @@ void relaxation_setup(PROT prot)
             all_atoms[ia].constr_list[i_connect+n_connect12] = &all_atoms[ja];
         }
         
-        all_atoms[ia].constr_dsq  = malloc(all_atoms[ia].n_constr * sizeof(double));
+        all_atoms[ia].constr_dsq  = (double *) malloc(all_atoms[ia].n_constr * sizeof(double));
         for (i_const=0; i_const<all_atoms[ia].n_constr; i_const++) {
             all_atoms[ia].constr_dsq[i_const] = ddvv(atom_p->xyz, all_atoms[ia].constr_list[i_const]->atom_p->xyz);
         }
@@ -1299,7 +1299,7 @@ void relaxation_setup(PROT prot)
                     
                     //printf("%s-%s-%s\n",atom2_p->name,atom1_p->name,relax_atom_p->connect12[i_connect]->name);
                     all_atoms[ia].n_rotate1++;
-                    all_atoms[ia].rotate1_lst = realloc(all_atoms[ia].rotate1_lst, all_atoms[ia].n_rotate1*sizeof(int));
+                    all_atoms[ia].rotate1_lst = (int *) realloc(all_atoms[ia].rotate1_lst, all_atoms[ia].n_rotate1*sizeof(int));
                     all_atoms[ia].rotate1_lst[all_atoms[ia].n_rotate1-1] = connect12[i_connect]->i_atom_prot;
                 }
                 
@@ -1326,7 +1326,7 @@ void relaxation_setup(PROT prot)
                     
                     //printf("%s-%s-%s\n",atom1_p->name,atom2_p->name,relax_atom_p->connect12[i_connect]->name);
                     all_atoms[ia].n_rotate2++;
-                    all_atoms[ia].rotate2_lst = realloc(all_atoms[ia].rotate2_lst, all_atoms[ia].n_rotate2*sizeof(int));
+                    all_atoms[ia].rotate2_lst = (int *) realloc(all_atoms[ia].rotate2_lst, all_atoms[ia].n_rotate2*sizeof(int));
                     all_atoms[ia].rotate2_lst[all_atoms[ia].n_rotate2-1] = connect12[i_connect]->i_atom_prot;
                 }
                 /*
@@ -1400,7 +1400,7 @@ void relaxation_setup(PROT prot)
                 }
                 
                 prot.res[i_res].n_ngh++;
-                prot.res[i_res].ngh = realloc(prot.res[i_res].ngh, prot.res[i_res].n_ngh * sizeof(RES *));
+                prot.res[i_res].ngh = (RES **) realloc(prot.res[i_res].ngh, prot.res[i_res].n_ngh * sizeof(RES *));
                 prot.res[i_res].ngh[prot.res[i_res].n_ngh-1] = &prot.res[j_res];
             }
         }
@@ -1671,7 +1671,7 @@ void add_conf2relax(CONF *conf_p, int fix) {
 void add_atom2relax(int ia, int fix) {
     n_relax++;
     all_atoms[ia].i_relax = n_relax-1;
-    relax_atoms = realloc(relax_atoms, n_relax * sizeof(RELAX));
+    relax_atoms = (RELAX *) realloc(relax_atoms, n_relax * sizeof(RELAX));
     relax_atoms[n_relax-1] = all_atoms[ia];
     relax_atoms[n_relax-1].r = relax_atoms[n_relax-1].atom_p->xyz;
     relax_atoms[n_relax-1].r_p = relax_atoms[n_relax-1].atom_p->xyz;
@@ -1806,9 +1806,9 @@ void setup_nghlst(PROT prot) {
                 
                 if (j_relax != -1) {
                     relax_atoms[i_relax].n_constr++;
-                    relax_atoms[i_relax].constr_list = realloc(relax_atoms[i_relax].constr_list, relax_atoms[i_relax].n_constr*sizeof(RELAX *));
+                    relax_atoms[i_relax].constr_list = (RELAX **) realloc(relax_atoms[i_relax].constr_list, relax_atoms[i_relax].n_constr*sizeof(RELAX *));
                     relax_atoms[i_relax].constr_list[relax_atoms[i_relax].n_constr-1] = &relax_atoms[all_atoms[ia].constr_list[i_constr]->i_relax];
-                    relax_atoms[i_relax].constr_dsq = realloc(relax_atoms[i_relax].constr_dsq, relax_atoms[i_relax].n_constr*sizeof(double));
+                    relax_atoms[i_relax].constr_dsq = (double *) realloc(relax_atoms[i_relax].constr_dsq, relax_atoms[i_relax].n_constr*sizeof(double));
                     relax_atoms[i_relax].constr_dsq[relax_atoms[i_relax].n_constr-1] = all_atoms[ia].constr_dsq[i_constr];
                 }
             }
@@ -1820,7 +1820,7 @@ void setup_nghlst(PROT prot) {
                 j_relax = all_atoms[ja].i_relax;
                 if (j_relax == -1) continue;
                 relax_atoms[i_relax].n_ngh14++;
-                relax_atoms[i_relax].ngh14 = realloc(relax_atoms[i_relax].ngh14, relax_atoms[i_relax].n_ngh14*sizeof(RELAX *));
+                relax_atoms[i_relax].ngh14 = (RELAX **) realloc(relax_atoms[i_relax].ngh14, relax_atoms[i_relax].n_ngh14*sizeof(RELAX *));
                 relax_atoms[i_relax].ngh14[relax_atoms[i_relax].n_ngh14-1] = &relax_atoms[all_atoms[ja].i_relax];
             }
             
@@ -1842,7 +1842,7 @@ void setup_nghlst(PROT prot) {
                 if (i_ngh<relax_atoms[i_relax].n_ngh14) continue;
                 
                 relax_atoms[i_relax].n_ngh++;
-                relax_atoms[i_relax].ngh = realloc(relax_atoms[i_relax].ngh, relax_atoms[i_relax].n_ngh*sizeof(RELAX *));
+                relax_atoms[i_relax].ngh = (RELAX **) realloc(relax_atoms[i_relax].ngh, relax_atoms[i_relax].n_ngh*sizeof(RELAX *));
                 relax_atoms[i_relax].ngh[relax_atoms[i_relax].n_ngh-1] = &relax_atoms[j_relax];
             }
         }
@@ -1873,8 +1873,8 @@ void setup_nghlst(PROT prot) {
         
         if (relax_atoms[i_relax].tor_atom1 != -1) {
             int i_rotate;
-            relax_atoms[i_relax].rotate1_lst = malloc(relax_atoms[i_relax].n_rotate1*sizeof(int));
-            relax_atoms[i_relax].rotate2_lst = malloc(relax_atoms[i_relax].n_rotate2*sizeof(int));
+            relax_atoms[i_relax].rotate1_lst = (int *) malloc(relax_atoms[i_relax].n_rotate1*sizeof(int));
+            relax_atoms[i_relax].rotate2_lst = (int *) malloc(relax_atoms[i_relax].n_rotate2*sizeof(int));
             
             for (i_rotate = 0; i_rotate < relax_atoms[i_relax].n_rotate1; i_rotate++) {
                 relax_atoms[i_relax].rotate1_lst[i_rotate]

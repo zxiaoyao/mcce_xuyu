@@ -49,9 +49,9 @@ int mem_position(PROT *prot_p, IPECE *ipece)
                 atom_p = &prot_p->res[i_res].conf[i_conf].atom[i_atom];
                 if (!atom_p->on) continue;
                 na++;
-                orig_r = realloc(orig_r, na*sizeof(VECTOR));
+                orig_r = (VECTOR *) realloc(orig_r, na*sizeof(VECTOR));
                 orig_r[na-1] = atom_p->xyz;
-                all_atoms = realloc(all_atoms, na*sizeof(ATOM *));
+                all_atoms = (ATOM **) realloc(all_atoms, na*sizeof(ATOM *));
                 all_atoms[na-1] = atom_p;
                 atom_p->i_atom_prot = na-1;
             }
@@ -249,11 +249,11 @@ int get_scored_atoms(PROT prot, IPECE *ipece)
                                 *reach_label(probe_grid, ipece) == 'o' ) {
                                     ipece->n_scored_atom++;
                                     
-                                    ipece->scored_atoms = realloc(ipece->scored_atoms, ipece->n_scored_atom*sizeof(ATOM *));
-                                    ipece->scored_atoms[ipece->n_scored_atom-1] = malloc(sizeof(ATOM));
+                                    ipece->scored_atoms = (ATOM **) realloc(ipece->scored_atoms, ipece->n_scored_atom*sizeof(ATOM *));
+                                    ipece->scored_atoms[ipece->n_scored_atom-1] = (ATOM *) malloc(sizeof(ATOM));
                                     memcpy(ipece->scored_atoms[ipece->n_scored_atom-1], atom_p, sizeof(ATOM));
                                     
-                                    ipece->atom_scores = realloc(ipece->atom_scores, ipece->n_scored_atom*sizeof(float));
+                                    ipece->atom_scores = (float *) realloc(ipece->atom_scores, ipece->n_scored_atom*sizeof(float));
                                     ipece->atom_scores[ipece->n_scored_atom-1] = score*atom_p->sas;
                                     
                                     added = 1;

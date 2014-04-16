@@ -16,7 +16,7 @@ void collect_all_connect12(int i_res, int i_conf, int i_atom, PROT prot, int (*n
         if (!atom_p->connect12[i_connect]) break;
         if (!atom_p->connect12[i_connect]->on) continue;
         (*n_connect12)++;
-        (*connect12) = realloc((*connect12), (*n_connect12)*sizeof(ATOM *));
+        (*connect12) = (ATOM **) realloc((*connect12), (*n_connect12)*sizeof(ATOM *));
         ((*connect12))[(*n_connect12)-1] = atom_p->connect12[i_connect];
         
         /* search for connectivity duplicated in more than one conformer */
@@ -32,7 +32,7 @@ void collect_all_connect12(int i_res, int i_conf, int i_atom, PROT prot, int (*n
                 j_atom = atom_p->connect12[i_connect]->i_atom_conf;
                 
                 (*n_connect12)++;
-                ((*connect12)) = realloc((*connect12), (*n_connect12)*sizeof(ATOM *));
+                ((*connect12)) = (ATOM **) realloc((*connect12), (*n_connect12)*sizeof(ATOM *));
                 ((*connect12))[(*n_connect12)-1] = &prot.res[j_res].conf[j_conf].atom[j_atom];
             }
             else {
@@ -40,7 +40,7 @@ void collect_all_connect12(int i_res, int i_conf, int i_atom, PROT prot, int (*n
                 
                 if (j_atom != -1) {
                     (*n_connect12)++;
-                    (*connect12) = realloc((*connect12), (*n_connect12)*sizeof(ATOM *));
+                    (*connect12) = (ATOM **) realloc((*connect12), (*n_connect12)*sizeof(ATOM *));
                     ((*connect12))[(*n_connect12)-1] = &prot.res[j_res].conf[j_conf].atom[j_atom];
                 }
             }
@@ -73,7 +73,7 @@ void collect_all_connect(int i_res, int i_conf, int i_atom, PROT prot, int (*n_c
         collect_all_connect12(j_res, j_conf, j_atom, prot, &n_connect12_j, &connect12_j);
         
         (*n_connect13) += n_connect12_j;
-        (*connect13) = realloc((*connect13), (*n_connect13)*sizeof(ATOM *));
+        (*connect13) = (ATOM **) realloc((*connect13), (*n_connect13)*sizeof(ATOM *));
         memcpy( (*connect13)+(*n_connect13)-(n_connect12_j), connect12_j, (n_connect12_j)*sizeof(ATOM *));
         free(connect12_j);
     }
@@ -103,7 +103,7 @@ void collect_all_connect(int i_res, int i_conf, int i_atom, PROT prot, int (*n_c
             continue;
         }
     }
-    (*connect13) = realloc((*connect13), (*n_connect13)*sizeof(ATOM *));
+    (*connect13) = (ATOM **) realloc((*connect13), (*n_connect13)*sizeof(ATOM *));
     
     /* Collect all 14 connnectivity */
     for (i_connect=0; i_connect<(*n_connect13); i_connect++) {
@@ -114,7 +114,7 @@ void collect_all_connect(int i_res, int i_conf, int i_atom, PROT prot, int (*n_c
         collect_all_connect12(j_res, j_conf, j_atom, prot, &n_connect12_j, &connect12_j);
         
         (*n_connect14) += n_connect12_j;
-        (*connect14) = realloc((*connect14), (*n_connect14)*sizeof(ATOM *));
+        (*connect14) = (ATOM **) realloc((*connect14), (*n_connect14)*sizeof(ATOM *));
         memcpy( ((*connect14))+(*n_connect14)-n_connect12_j, connect12_j, (n_connect12_j)*sizeof(ATOM *));
         free(connect12_j);
     }
@@ -153,5 +153,5 @@ void collect_all_connect(int i_res, int i_conf, int i_atom, PROT prot, int (*n_c
             continue;
         }
     }
-    (*connect14) = realloc((*connect14), (*n_connect14)*sizeof(ATOM *));
+    (*connect14) = (ATOM **) realloc((*connect14), (*n_connect14)*sizeof(ATOM *));
 }

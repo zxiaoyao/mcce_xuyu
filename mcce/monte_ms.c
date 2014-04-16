@@ -2394,16 +2394,16 @@ int cmp_conftype(CONFTYPE t1, CONFTYPE t2)
 
 CONFTYPE get_conftype(CONF conf)
 {
-	CONFTYPE typeid;
-	strcpy(typeid.resName, conf.resName);
-	typeid.chainID = conf.chainID;
-	typeid.iCode = conf.iCode;
-	typeid.resSeq = conf.resSeq;
-	typeid.e = conf.e;
-	typeid.H = conf.H;
-	if (conf.uniqID[3] == 'D' && conf.uniqID[4] == 'M') typeid.DM = 't';
-	else typeid.DM = '\0';
-	return typeid;
+	CONFTYPE typeId;
+	strcpy(typeId.resName, conf.resName);
+	typeId.chainID = conf.chainID;
+	typeId.iCode = conf.iCode;
+	typeId.resSeq = conf.resSeq;
+	typeId.e = conf.e;
+	typeId.H = conf.H;
+	if (conf.uniqID[3] == 'D' && conf.uniqID[4] == 'M') typeId.DM = 't';
+	else typeId.DM = '\0';
+	return typeId;
 }
 
 void update_Sconvergence()

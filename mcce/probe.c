@@ -214,7 +214,7 @@ int probe(PROT prot, IPECE *ipece)
             probe_grid.z++) {
                 if (*reach_label(probe_grid, ipece) == '\0') {
                     ipece->n_probe++;
-                    ipece->probes = realloc(ipece->probes, ipece->n_probe*sizeof(INT_VECT));
+                    ipece->probes = (INT_VECT *) realloc(ipece->probes, ipece->n_probe*sizeof(INT_VECT));
                     ipece->probes[ipece->n_probe-1] = probe_grid;
                 }
             }
@@ -260,7 +260,7 @@ int probe(PROT prot, IPECE *ipece)
                 label_updated = 1;
             }
         }
-        ipece->probes = realloc(ipece->probes, (ipece->n_probe)*sizeof(INT_VECT));
+        ipece->probes = (INT_VECT *) realloc(ipece->probes, (ipece->n_probe)*sizeof(INT_VECT));
     }
     
     /* All the remaining grids in the list now are not connected to outside of
@@ -345,11 +345,11 @@ int create_grid_box(PROT prot, IPECE *ipece)
     ipece->n_grid.z = ipece->grid_boundary_higher.z - ipece->grid_boundary_lower.z + 1;
     
     /* initialize the label array */
-    ipece->label = malloc(ipece->n_grid.x * sizeof(char **));
+    ipece->label = (char ***) malloc(ipece->n_grid.x * sizeof(char **));
     for (i_grid = 0; i_grid<ipece->n_grid.x; i_grid++) {
-        ipece->label[i_grid] = malloc(ipece->n_grid.y * sizeof(char *));
+        ipece->label[i_grid] = (char **) malloc(ipece->n_grid.y * sizeof(char *));
         for (j_grid = 0; j_grid<ipece->n_grid.y; j_grid++) {
-            ipece->label[i_grid][j_grid] = malloc(ipece->n_grid.z * sizeof(char));
+            ipece->label[i_grid][j_grid] = (char *) malloc(ipece->n_grid.z * sizeof(char));
             for (k_grid = 0; k_grid<ipece->n_grid.z; k_grid++) {
                 ipece->label[i_grid][j_grid][k_grid] = '\0';
             }

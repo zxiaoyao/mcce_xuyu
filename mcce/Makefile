@@ -1,5 +1,3 @@
-SRCDIR = src
-
 SRC     =  all.c       ddvv.c          geom_3v_onto_3v.c  ins_res.c         strip.c\
 app.c       del_conf.c      geom_apply.c       line_2v.c         vdotv.c\
 avv.c       del_prot.c      geom_inverse.c     load_all_param.c  vector_normalize.c\
@@ -17,15 +15,19 @@ relaxation.c collect_connect.c  torsion.c       vdw_fast.c hbond_extra.c swap.c 
 check_tpl.c zip.c del_dir.c make_matrices.c\
 mem_position.c probe.c add_membrane.c    load_pdb_no_param.c
 
+
 LIB	= mcce.a
 
+all:	$(LIB)
+	$(CC) $(CFLAGS) -o mcce mcce.c $(LIB) -lgdbm -lm -lz
+	
 OBJ	= $(SRC:.c=.o)
 
 HEADER	= mcce.h
 
 $(OBJ): $(HEADER)
 
-CC      = g++
+CC      = mpic++
 CFLAGS  = -g -Wall
 
 .c.o:
@@ -38,9 +40,6 @@ ARFLAGS = rvs
 $(LIB): $(OBJ)
 	$(AR) $(ARFLAGS) $(LIB) $(OBJ)
 
-all:	$(LIB)
-	$(CC) $(CFLAGS) -o mcce mcce.c $(LIB) -lgdbm -lm -lz
-	rm -f *.o
 	
 clean:
 	rm -f *.o

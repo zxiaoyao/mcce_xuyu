@@ -1,25 +1,25 @@
 pH =   7.00 Eh =   0.00:
 Identified 10 free residues from 13 residues.
 Doing annealing... 
-Step          0, E_minimum =   1019.844, E_running =   1019.844
-Step      50000, E_minimum =    -92.608, E_running =    -89.905
-Step     100000, E_minimum =    -92.608, E_running =    -89.562
-Step     150000, E_minimum =    -92.608, E_running =    -89.717
-Step     200000, E_minimum =    -92.608, E_running =    -92.005
-Step     250000, E_minimum =    -92.608, E_running =    -91.305
-Step     300000, E_minimum =    -92.608, E_running =    -91.529
-Step     350000, E_minimum =    -92.608, E_running =    -91.357
-Step     400000, E_minimum =    -92.608, E_running =    -91.883
-Exit     450000, E_minimum =    -92.608, E_base =    -13.644, E_running =    -90.068
-The average running energy, corresponding to H, is  -89.857 kCal/mol
+Step          0, E_minimum =     -7.104, E_running =     -7.104
+Step      50000, E_minimum =    -46.437, E_running =    -44.824
+Step     100000, E_minimum =    -47.019, E_running =    -40.758
+Step     150000, E_minimum =    -47.019, E_running =    -40.053
+Step     200000, E_minimum =    -47.019, E_running =    -44.648
+Step     250000, E_minimum =    -47.019, E_running =    -42.464
+Step     300000, E_minimum =    -47.019, E_running =    -45.259
+Step     350000, E_minimum =    -47.019, E_running =    -42.130
+Step     400000, E_minimum =    -47.019, E_running =    -43.277
+Exit     450000, E_minimum =    -47.019, E_base =    -13.644, E_running =    -43.922
+The average running energy, corresponding to H, is  -43.110 kCal/mol
 Done
 
 Doing equalibration ... 
-Step          0, E_minimum =    -90.066, E_running =    -90.066
-Step      50000, E_minimum =    -92.551, E_running =    -90.253
-Step     100000, E_minimum =    -92.607, E_running =    -90.206
-Exit     150000, E_minimum =    -92.607, E_base =    -13.644, E_running =    -90.957
-The average running energy, corresponding to H, is  -89.666 kCal/mol
+Step          0, E_minimum =    -43.922, E_running =    -43.922
+Step      50000, E_minimum =    -46.885, E_running =    -43.195
+Step     100000, E_minimum =    -47.018, E_running =    -46.459
+Exit     150000, E_minimum =    -47.018, E_base =    -13.644, E_running =    -43.790
+The average running energy, corresponding to H, is  -43.014 kCal/mol
 Done
 
 Reducing conflist ... 0 conformers are marked as fixed.
@@ -27,623 +27,627 @@ Reducing conflist ... 0 conformers are marked as fixed.
 10 free residues from 13 residues, after reduction.
 
 Doing annealing of MC  1 ...
-Step          0, E_minimum =    -33.528, E_running =    -33.528
-Step      50000, E_minimum =    -92.607, E_running =    -87.959
-Step     100000, E_minimum =    -92.608, E_running =    -91.333
-Step     150000, E_minimum =    -92.608, E_running =    -85.715
-Step     200000, E_minimum =    -92.608, E_running =    -91.126
-Step     250000, E_minimum =    -92.608, E_running =    -90.057
-Step     300000, E_minimum =    -92.608, E_running =    -90.202
-Step     350000, E_minimum =    -92.608, E_running =    -91.312
-Step     400000, E_minimum =    -92.609, E_running =    -90.016
-Exit     450000, E_minimum =    -92.609, E_base =    -13.644, E_running =    -91.352
-The average running energy, corresponding to H, is  -89.854 kCal/mol
+Step          0, E_minimum =    843.610, E_running =    843.610
+Step      50000, E_minimum =    -46.995, E_running =    -44.812
+Step     100000, E_minimum =    -47.018, E_running =    -42.757
+Step     150000, E_minimum =    -47.018, E_running =    -44.119
+Step     200000, E_minimum =    -47.018, E_running =    -40.215
+Step     250000, E_minimum =    -47.018, E_running =    -45.204
+Step     300000, E_minimum =    -47.018, E_running =    -44.456
+Step     350000, E_minimum =    -47.018, E_running =    -45.896
+Step     400000, E_minimum =    -47.018, E_running =    -43.809
+Exit     450000, E_minimum =    -47.018, E_base =    -13.644, E_running =    -40.982
+The average running energy, corresponding to H, is  -43.166 kCal/mol
 Doing MC  1 ... 
-Step          0, E_minimum =    -91.350, E_running =    -91.350
-Step      50000, E_minimum =    -92.607, E_running =    -90.537
-Step     100000, E_minimum =    -92.608, E_running =    -90.278
-Step     150000, E_minimum =    -92.608, E_running =    -91.276
-Step     200000, E_minimum =    -92.608, E_running =    -92.047
-Step     250000, E_minimum =    -92.608, E_running =    -89.599
-Step     300000, E_minimum =    -92.609, E_running =    -89.965
-Step     350000, E_minimum =    -92.609, E_running =    -90.854
-Step     400000, E_minimum =    -92.609, E_running =    -90.061
-Step     450000, E_minimum =    -92.609, E_running =    -91.208
-Step     500000, E_minimum =    -92.609, E_running =    -89.267
-Step     550000, E_minimum =    -92.609, E_running =    -88.245
-Step     600000, E_minimum =    -92.609, E_running =    -90.961
-Step     650000, E_minimum =    -92.609, E_running =    -90.045
-Step     700000, E_minimum =    -92.610, E_running =    -90.764
-Step     750000, E_minimum =    -92.610, E_running =    -89.925
-Step     800000, E_minimum =    -92.610, E_running =    -90.335
-Exit     850000, E_minimum =    -92.611, E_base =    -13.644, E_running =    -89.960
-The average running energy, corresponding to H, is  -89.748 kCal/mol
+Step          0, E_minimum =    -40.983, E_running =    -40.983
+Step      50000, E_minimum =    -46.635, E_running =    -43.114
+Step     100000, E_minimum =    -46.636, E_running =    -43.077
+Step     150000, E_minimum =    -46.995, E_running =    -41.861
+Step     200000, E_minimum =    -46.995, E_running =    -37.131
+Step     250000, E_minimum =    -46.995, E_running =    -45.079
+Step     300000, E_minimum =    -46.995, E_running =    -41.563
+Step     350000, E_minimum =    -46.995, E_running =    -43.213
+Step     400000, E_minimum =    -46.995, E_running =    -43.867
+Step     450000, E_minimum =    -46.995, E_running =    -40.770
+Step     500000, E_minimum =    -46.995, E_running =    -42.393
+Step     550000, E_minimum =    -46.996, E_running =    -43.771
+Step     600000, E_minimum =    -46.996, E_running =    -43.677
+Step     650000, E_minimum =    -47.116, E_running =    -39.611
+Step     700000, E_minimum =    -47.116, E_running =    -42.181
+Step     750000, E_minimum =    -47.116, E_running =    -43.714
+Step     800000, E_minimum =    -47.116, E_running =    -43.884
+Exit     850000, E_minimum =    -47.116, E_base =    -13.644, E_running =    -44.766
+The average running energy, corresponding to H, is  -43.177 kCal/mol
 Done
 
 Doing annealing of MC  2 ...
-Step          0, E_minimum =    944.636, E_running =    944.636
-Step      50000, E_minimum =    -92.551, E_running =    -89.617
-Step     100000, E_minimum =    -92.607, E_running =    -91.464
-Step     150000, E_minimum =    -92.607, E_running =    -90.995
-Step     200000, E_minimum =    -92.608, E_running =    -86.087
-Step     250000, E_minimum =    -92.608, E_running =    -84.479
-Step     300000, E_minimum =    -92.608, E_running =    -88.471
-Step     350000, E_minimum =    -92.608, E_running =    -88.025
-Step     400000, E_minimum =    -92.608, E_running =    -91.524
-Exit     450000, E_minimum =    -92.608, E_base =    -13.644, E_running =    -89.003
-The average running energy, corresponding to H, is  -89.859 kCal/mol
+Step          0, E_minimum =   1131.928, E_running =   1131.928
+Step      50000, E_minimum =    -47.019, E_running =    -45.120
+Step     100000, E_minimum =    -47.019, E_running =    -40.470
+Step     150000, E_minimum =    -47.117, E_running =    -43.942
+Step     200000, E_minimum =    -47.117, E_running =    -44.004
+Step     250000, E_minimum =    -47.117, E_running =    -44.459
+Step     300000, E_minimum =    -47.117, E_running =    -44.368
+Step     350000, E_minimum =    -47.117, E_running =    -43.300
+Step     400000, E_minimum =    -47.117, E_running =    -44.301
+Exit     450000, E_minimum =    -47.117, E_base =    -13.644, E_running =    -40.184
+The average running energy, corresponding to H, is  -43.136 kCal/mol
 Doing MC  2 ... 
-Step          0, E_minimum =    -89.001, E_running =    -89.001
-Step      50000, E_minimum =    -92.607, E_running =    -91.659
-Step     100000, E_minimum =    -92.607, E_running =    -89.117
-Step     150000, E_minimum =    -92.607, E_running =    -90.161
-Step     200000, E_minimum =    -92.607, E_running =    -88.503
-Step     250000, E_minimum =    -92.609, E_running =    -89.688
-Step     300000, E_minimum =    -92.609, E_running =    -90.789
-Step     350000, E_minimum =    -92.609, E_running =    -88.184
-Step     400000, E_minimum =    -92.609, E_running =    -88.685
-Step     450000, E_minimum =    -92.609, E_running =    -89.320
-Step     500000, E_minimum =    -92.609, E_running =    -90.294
-Step     550000, E_minimum =    -92.610, E_running =    -91.009
-Step     600000, E_minimum =    -92.610, E_running =    -88.929
-Step     650000, E_minimum =    -92.610, E_running =    -89.200
-Step     700000, E_minimum =    -92.610, E_running =    -87.997
-Step     750000, E_minimum =    -92.610, E_running =    -88.483
-Step     800000, E_minimum =    -92.610, E_running =    -90.660
-Exit     850000, E_minimum =    -92.610, E_base =    -13.644, E_running =    -88.155
-The average running energy, corresponding to H, is  -89.887 kCal/mol
+Step          0, E_minimum =    -40.182, E_running =    -40.182
+Step      50000, E_minimum =    -46.579, E_running =    -44.551
+Step     100000, E_minimum =    -46.580, E_running =    -43.173
+Step     150000, E_minimum =    -46.789, E_running =    -41.373
+Step     200000, E_minimum =    -46.884, E_running =    -43.483
+Step     250000, E_minimum =    -46.884, E_running =    -42.834
+Step     300000, E_minimum =    -47.017, E_running =    -44.554
+Step     350000, E_minimum =    -47.017, E_running =    -44.336
+Step     400000, E_minimum =    -47.115, E_running =    -43.763
+Step     450000, E_minimum =    -47.115, E_running =    -44.016
+Step     500000, E_minimum =    -47.115, E_running =    -42.823
+Step     550000, E_minimum =    -47.115, E_running =    -40.847
+Step     600000, E_minimum =    -47.115, E_running =    -43.718
+Step     650000, E_minimum =    -47.115, E_running =    -44.955
+Step     700000, E_minimum =    -47.115, E_running =    -43.583
+Step     750000, E_minimum =    -47.115, E_running =    -41.834
+Step     800000, E_minimum =    -47.115, E_running =    -44.429
+Exit     850000, E_minimum =    -47.115, E_base =    -13.644, E_running =    -43.236
+The average running energy, corresponding to H, is  -43.145 kCal/mol
 Done
 
 Doing annealing of MC  3 ...
-Step          0, E_minimum =   1944.618, E_running =   1944.618
-Step      50000, E_minimum =    -92.487, E_running =    -88.298
-Step     100000, E_minimum =    -92.609, E_running =    -91.515
-Step     150000, E_minimum =    -92.609, E_running =    -90.223
-Step     200000, E_minimum =    -92.609, E_running =    -91.525
-Step     250000, E_minimum =    -92.609, E_running =    -89.165
-Step     300000, E_minimum =    -92.609, E_running =    -90.782
-Step     350000, E_minimum =    -92.610, E_running =    -89.428
-Step     400000, E_minimum =    -92.610, E_running =    -88.449
-Exit     450000, E_minimum =    -92.610, E_base =    -13.644, E_running =    -89.961
-The average running energy, corresponding to H, is  -89.813 kCal/mol
+Step          0, E_minimum =    505.753, E_running =    505.753
+Step      50000, E_minimum =    -46.641, E_running =    -41.863
+Step     100000, E_minimum =    -46.641, E_running =    -41.051
+Step     150000, E_minimum =    -47.018, E_running =    -44.717
+Step     200000, E_minimum =    -47.018, E_running =    -45.041
+Step     250000, E_minimum =    -47.018, E_running =    -45.230
+Step     300000, E_minimum =    -47.018, E_running =    -44.421
+Step     350000, E_minimum =    -47.018, E_running =    -43.227
+Step     400000, E_minimum =    -47.018, E_running =    -43.745
+Exit     450000, E_minimum =    -47.018, E_base =    -13.644, E_running =    -44.961
+The average running energy, corresponding to H, is  -43.190 kCal/mol
 Doing MC  3 ... 
-Step          0, E_minimum =    -89.958, E_running =    -89.958
-Step      50000, E_minimum =    -92.608, E_running =    -88.845
-Step     100000, E_minimum =    -92.608, E_running =    -88.552
-Step     150000, E_minimum =    -92.608, E_running =    -89.149
-Step     200000, E_minimum =    -92.608, E_running =    -88.600
-Step     250000, E_minimum =    -92.608, E_running =    -89.994
-Step     300000, E_minimum =    -92.608, E_running =    -91.083
-Step     350000, E_minimum =    -92.609, E_running =    -88.978
-Step     400000, E_minimum =    -92.609, E_running =    -90.919
-Step     450000, E_minimum =    -92.609, E_running =    -91.038
-Step     500000, E_minimum =    -92.609, E_running =    -90.412
-Step     550000, E_minimum =    -92.609, E_running =    -90.973
-Step     600000, E_minimum =    -92.609, E_running =    -89.742
-Step     650000, E_minimum =    -92.609, E_running =    -90.503
-Step     700000, E_minimum =    -92.609, E_running =    -87.153
-Step     750000, E_minimum =    -92.609, E_running =    -91.089
-Step     800000, E_minimum =    -92.609, E_running =    -91.046
-Exit     850000, E_minimum =    -92.609, E_base =    -13.644, E_running =    -88.382
-The average running energy, corresponding to H, is  -89.871 kCal/mol
+Step          0, E_minimum =    -44.961, E_running =    -44.961
+Step      50000, E_minimum =    -46.790, E_running =    -40.747
+Step     100000, E_minimum =    -47.018, E_running =    -47.018
+Step     150000, E_minimum =    -47.116, E_running =    -42.164
+Step     200000, E_minimum =    -47.116, E_running =    -43.768
+Step     250000, E_minimum =    -47.116, E_running =    -42.147
+Step     300000, E_minimum =    -47.116, E_running =    -44.551
+Step     350000, E_minimum =    -47.116, E_running =    -43.871
+Step     400000, E_minimum =    -47.116, E_running =    -42.291
+Step     450000, E_minimum =    -47.116, E_running =    -44.145
+Step     500000, E_minimum =    -47.116, E_running =    -42.350
+Step     550000, E_minimum =    -47.116, E_running =    -45.293
+Step     600000, E_minimum =    -47.116, E_running =    -41.401
+Step     650000, E_minimum =    -47.116, E_running =    -43.485
+Step     700000, E_minimum =    -47.116, E_running =    -42.155
+Step     750000, E_minimum =    -47.116, E_running =    -42.491
+Step     800000, E_minimum =    -47.116, E_running =    -42.812
+Exit     850000, E_minimum =    -47.116, E_base =    -13.644, E_running =    -45.211
+The average running energy, corresponding to H, is  -43.189 kCal/mol
 Done
 
 Doing annealing of MC  4 ...
-Step          0, E_minimum =   2260.986, E_running =   2260.986
-Step      50000, E_minimum =    -92.607, E_running =    -88.290
-Step     100000, E_minimum =    -92.608, E_running =    -91.221
-Step     150000, E_minimum =    -92.608, E_running =    -88.971
-Step     200000, E_minimum =    -92.608, E_running =    -90.170
-Step     250000, E_minimum =    -92.608, E_running =    -90.004
-Step     300000, E_minimum =    -92.608, E_running =    -89.677
-Step     350000, E_minimum =    -92.608, E_running =    -89.792
-Step     400000, E_minimum =    -92.608, E_running =    -89.522
-Exit     450000, E_minimum =    -92.609, E_base =    -13.644, E_running =    -91.594
-The average running energy, corresponding to H, is  -89.827 kCal/mol
+Step          0, E_minimum =   2021.619, E_running =   2021.619
+Step      50000, E_minimum =    -47.018, E_running =    -44.442
+Step     100000, E_minimum =    -47.018, E_running =    -39.646
+Step     150000, E_minimum =    -47.018, E_running =    -43.804
+Step     200000, E_minimum =    -47.018, E_running =    -41.749
+Step     250000, E_minimum =    -47.018, E_running =    -42.153
+Step     300000, E_minimum =    -47.018, E_running =    -43.731
+Step     350000, E_minimum =    -47.116, E_running =    -44.927
+Step     400000, E_minimum =    -47.116, E_running =    -44.520
+Exit     450000, E_minimum =    -47.116, E_base =    -13.644, E_running =    -44.489
+The average running energy, corresponding to H, is  -43.190 kCal/mol
 Doing MC  4 ... 
-Step          0, E_minimum =    -91.592, E_running =    -91.592
-Step      50000, E_minimum =    -92.608, E_running =    -86.744
-Step     100000, E_minimum =    -92.608, E_running =    -89.474
-Step     150000, E_minimum =    -92.608, E_running =    -89.905
-Step     200000, E_minimum =    -92.608, E_running =    -89.832
-Step     250000, E_minimum =    -92.608, E_running =    -89.356
-Step     300000, E_minimum =    -92.608, E_running =    -89.931
-Step     350000, E_minimum =    -92.608, E_running =    -88.127
-Step     400000, E_minimum =    -92.609, E_running =    -90.570
-Step     450000, E_minimum =    -92.609, E_running =    -91.575
-Step     500000, E_minimum =    -92.609, E_running =    -91.463
-Step     550000, E_minimum =    -92.609, E_running =    -85.235
-Step     600000, E_minimum =    -92.609, E_running =    -91.005
-Step     650000, E_minimum =    -92.610, E_running =    -85.624
-Step     700000, E_minimum =    -92.610, E_running =    -90.907
-Step     750000, E_minimum =    -92.610, E_running =    -88.642
-Step     800000, E_minimum =    -92.610, E_running =    -91.000
-Exit     850000, E_minimum =    -92.611, E_base =    -13.644, E_running =    -90.973
-The average running energy, corresponding to H, is  -89.779 kCal/mol
+Step          0, E_minimum =    -44.489, E_running =    -44.489
+Step      50000, E_minimum =    -46.580, E_running =    -41.307
+Step     100000, E_minimum =    -46.976, E_running =    -43.112
+Step     150000, E_minimum =    -47.018, E_running =    -43.162
+Step     200000, E_minimum =    -47.018, E_running =    -45.260
+Step     250000, E_minimum =    -47.116, E_running =    -45.633
+Step     300000, E_minimum =    -47.116, E_running =    -42.130
+Step     350000, E_minimum =    -47.116, E_running =    -41.889
+Step     400000, E_minimum =    -47.116, E_running =    -43.276
+Step     450000, E_minimum =    -47.116, E_running =    -45.266
+Step     500000, E_minimum =    -47.116, E_running =    -39.233
+Step     550000, E_minimum =    -47.116, E_running =    -43.347
+Step     600000, E_minimum =    -47.116, E_running =    -40.360
+Step     650000, E_minimum =    -47.116, E_running =    -43.244
+Step     700000, E_minimum =    -47.116, E_running =    -44.434
+Step     750000, E_minimum =    -47.116, E_running =    -38.714
+Step     800000, E_minimum =    -47.116, E_running =    -44.503
+Exit     850000, E_minimum =    -47.116, E_base =    -13.644, E_running =    -42.756
+The average running energy, corresponding to H, is  -43.144 kCal/mol
 Done
 
 Doing annealing of MC  5 ...
-Step          0, E_minimum =    -33.777, E_running =    -33.777
-Step      50000, E_minimum =    -92.409, E_running =    -88.131
-Step     100000, E_minimum =    -92.552, E_running =    -90.084
-Step     150000, E_minimum =    -92.608, E_running =    -90.241
-Step     200000, E_minimum =    -92.608, E_running =    -84.321
-Step     250000, E_minimum =    -92.609, E_running =    -90.687
-Step     300000, E_minimum =    -92.609, E_running =    -86.921
-Step     350000, E_minimum =    -92.609, E_running =    -88.619
-Step     400000, E_minimum =    -92.609, E_running =    -89.956
-Exit     450000, E_minimum =    -92.609, E_base =    -13.644, E_running =    -91.673
-The average running energy, corresponding to H, is  -89.794 kCal/mol
+Step          0, E_minimum =     84.440, E_running =     84.440
+Step      50000, E_minimum =    -47.116, E_running =    -44.239
+Step     100000, E_minimum =    -47.116, E_running =    -41.309
+Step     150000, E_minimum =    -47.116, E_running =    -40.618
+Step     200000, E_minimum =    -47.116, E_running =    -44.921
+Step     250000, E_minimum =    -47.116, E_running =    -44.655
+Step     300000, E_minimum =    -47.116, E_running =    -39.352
+Step     350000, E_minimum =    -47.116, E_running =    -43.499
+Step     400000, E_minimum =    -47.116, E_running =    -42.976
+Exit     450000, E_minimum =    -47.116, E_base =    -13.644, E_running =    -44.641
+The average running energy, corresponding to H, is  -43.119 kCal/mol
 Doing MC  5 ... 
-Step          0, E_minimum =    -91.670, E_running =    -91.670
-Step      50000, E_minimum =    -92.607, E_running =    -89.754
-Step     100000, E_minimum =    -92.608, E_running =    -86.885
-Step     150000, E_minimum =    -92.608, E_running =    -88.031
-Step     200000, E_minimum =    -92.608, E_running =    -90.263
-Step     250000, E_minimum =    -92.609, E_running =    -88.354
-Step     300000, E_minimum =    -92.609, E_running =    -90.823
-Step     350000, E_minimum =    -92.609, E_running =    -89.274
-Step     400000, E_minimum =    -92.609, E_running =    -91.758
-Step     450000, E_minimum =    -92.609, E_running =    -89.301
-Step     500000, E_minimum =    -92.609, E_running =    -90.939
-Step     550000, E_minimum =    -92.610, E_running =    -90.566
-Step     600000, E_minimum =    -92.610, E_running =    -86.117
-Step     650000, E_minimum =    -92.611, E_running =    -89.406
-Step     700000, E_minimum =    -92.611, E_running =    -89.695
-Step     750000, E_minimum =    -92.611, E_running =    -90.477
-Step     800000, E_minimum =    -92.611, E_running =    -91.002
-Exit     850000, E_minimum =    -92.612, E_base =    -13.644, E_running =    -87.897
-The average running energy, corresponding to H, is  -89.818 kCal/mol
+Step          0, E_minimum =    -44.641, E_running =    -44.641
+Step      50000, E_minimum =    -46.995, E_running =    -42.672
+Step     100000, E_minimum =    -46.995, E_running =    -45.359
+Step     150000, E_minimum =    -46.995, E_running =    -43.638
+Step     200000, E_minimum =    -46.995, E_running =    -45.121
+Step     250000, E_minimum =    -46.995, E_running =    -43.123
+Step     300000, E_minimum =    -46.995, E_running =    -43.250
+Step     350000, E_minimum =    -46.995, E_running =    -41.738
+Step     400000, E_minimum =    -46.995, E_running =    -44.171
+Step     450000, E_minimum =    -46.995, E_running =    -43.784
+Step     500000, E_minimum =    -47.116, E_running =    -43.605
+Step     550000, E_minimum =    -47.116, E_running =    -43.350
+Step     600000, E_minimum =    -47.116, E_running =    -45.186
+Step     650000, E_minimum =    -47.116, E_running =    -44.554
+Step     700000, E_minimum =    -47.116, E_running =    -44.122
+Step     750000, E_minimum =    -47.116, E_running =    -43.105
+Step     800000, E_minimum =    -47.116, E_running =    -35.566
+Exit     850000, E_minimum =    -47.117, E_base =    -13.644, E_running =    -44.143
+The average running energy, corresponding to H, is  -43.107 kCal/mol
 Done
 
 Doing annealing of MC  6 ...
-Step          0, E_minimum =    959.411, E_running =    959.411
-Step      50000, E_minimum =    -92.607, E_running =    -88.505
-Step     100000, E_minimum =    -92.608, E_running =    -89.527
-Step     150000, E_minimum =    -92.608, E_running =    -91.434
-Step     200000, E_minimum =    -92.608, E_running =    -92.195
-Step     250000, E_minimum =    -92.609, E_running =    -89.661
-Step     300000, E_minimum =    -92.609, E_running =    -89.183
-Step     350000, E_minimum =    -92.609, E_running =    -89.575
-Step     400000, E_minimum =    -92.609, E_running =    -88.339
-Exit     450000, E_minimum =    -92.609, E_base =    -13.644, E_running =    -89.877
-The average running energy, corresponding to H, is  -89.825 kCal/mol
+Step          0, E_minimum =     32.151, E_running =     32.151
+Step      50000, E_minimum =    -47.018, E_running =    -44.488
+Step     100000, E_minimum =    -47.018, E_running =    -44.626
+Step     150000, E_minimum =    -47.018, E_running =    -44.675
+Step     200000, E_minimum =    -47.018, E_running =    -41.511
+Step     250000, E_minimum =    -47.116, E_running =    -42.211
+Step     300000, E_minimum =    -47.116, E_running =    -44.169
+Step     350000, E_minimum =    -47.116, E_running =    -44.202
+Step     400000, E_minimum =    -47.116, E_running =    -42.609
+Exit     450000, E_minimum =    -47.116, E_base =    -13.644, E_running =    -44.771
+The average running energy, corresponding to H, is  -43.123 kCal/mol
 Doing MC  6 ... 
-Step          0, E_minimum =    -89.875, E_running =    -89.875
-Step      50000, E_minimum =    -92.608, E_running =    -87.488
-Step     100000, E_minimum =    -92.608, E_running =    -91.315
-Step     150000, E_minimum =    -92.608, E_running =    -90.255
-Step     200000, E_minimum =    -92.608, E_running =    -90.633
-Step     250000, E_minimum =    -92.608, E_running =    -88.971
-Step     300000, E_minimum =    -92.608, E_running =    -88.616
-Step     350000, E_minimum =    -92.608, E_running =    -90.270
-Step     400000, E_minimum =    -92.608, E_running =    -91.400
-Step     450000, E_minimum =    -92.609, E_running =    -89.103
-Step     500000, E_minimum =    -92.609, E_running =    -91.665
-Step     550000, E_minimum =    -92.609, E_running =    -88.163
-Step     600000, E_minimum =    -92.609, E_running =    -90.993
-Step     650000, E_minimum =    -92.609, E_running =    -88.740
-Step     700000, E_minimum =    -92.609, E_running =    -89.019
-Step     750000, E_minimum =    -92.609, E_running =    -86.312
-Step     800000, E_minimum =    -92.609, E_running =    -87.327
-Exit     850000, E_minimum =    -92.609, E_base =    -13.644, E_running =    -90.906
-The average running energy, corresponding to H, is  -89.831 kCal/mol
+Step          0, E_minimum =    -44.771, E_running =    -44.771
+Step      50000, E_minimum =    -46.614, E_running =    -42.084
+Step     100000, E_minimum =    -46.897, E_running =    -40.701
+Step     150000, E_minimum =    -47.018, E_running =    -40.805
+Step     200000, E_minimum =    -47.018, E_running =    -44.232
+Step     250000, E_minimum =    -47.018, E_running =    -44.351
+Step     300000, E_minimum =    -47.018, E_running =    -43.014
+Step     350000, E_minimum =    -47.019, E_running =    -42.599
+Step     400000, E_minimum =    -47.019, E_running =    -42.527
+Step     450000, E_minimum =    -47.019, E_running =    -43.126
+Step     500000, E_minimum =    -47.019, E_running =    -42.577
+Step     550000, E_minimum =    -47.019, E_running =    -42.931
+Step     600000, E_minimum =    -47.019, E_running =    -42.547
+Step     650000, E_minimum =    -47.019, E_running =    -42.908
+Step     700000, E_minimum =    -47.019, E_running =    -41.946
+Step     750000, E_minimum =    -47.019, E_running =    -43.189
+Step     800000, E_minimum =    -47.020, E_running =    -41.007
+Exit     850000, E_minimum =    -47.020, E_base =    -13.644, E_running =    -41.659
+The average running energy, corresponding to H, is  -43.129 kCal/mol
 Done
 
 Conformer     flag   E_self   mc01   mc02   mc03   mc04   mc05   mc06      occ Sgm(n-1)
-LYS01_0001_001   f    2.038     2.012  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_002   f   -0.633    -0.642  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_003   f   -1.186    -1.216  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_004   f   -2.751    -2.760  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_005   f   -2.928    -2.934  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_006   f   -2.362    -2.386  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_007   f   -0.745    -0.768  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_008   f   -3.056    -3.067  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_009   f   -1.720    -1.740  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_010   f   -0.877    -0.890  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_011   f   -1.033    -1.048  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_012   f   -1.302    -1.314  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_013   f   -2.709    -2.754  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_014   f   -1.911    -1.941  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_015   f   -0.293    -0.304  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_016   f   -1.112    -1.121  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_017   f   -1.738    -1.747  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_018   f   -0.948    -0.956  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_019   f   -1.184    -1.192  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0001_020   f   -2.937    -2.945  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS+1_0001_021   f   -1.496    -1.522  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS+1_0001_022   f   -5.019    -5.028  0.002  0.002  0.003  0.001  0.002  0.002 Av=0.002 Sg=0.000
-LYS+1_0001_023   f   -5.348    -5.380  0.006  0.005  0.004  0.004  0.005  0.004 Av=0.005 Sg=0.001
-LYS+1_0001_024   f   -7.589    -7.598  0.137  0.145  0.145  0.147  0.138  0.151 Av=0.144 Sg=0.006
-LYS+1_0001_025   f   -7.648    -7.654  0.152  0.151  0.155  0.142  0.147  0.152 Av=0.150 Sg=0.005
-LYS+1_0001_026   f   -7.072    -7.096  0.069  0.067  0.066  0.073  0.069  0.073 Av=0.070 Sg=0.003
-LYS+1_0001_027   f   -5.860    -5.883  0.010  0.011  0.011  0.011  0.013  0.012 Av=0.011 Sg=0.001
-LYS+1_0001_028   f   -6.987    -6.998  0.143  0.163  0.152  0.158  0.161  0.149 Av=0.154 Sg=0.008
-LYS+1_0001_029   f   -6.516    -6.536  0.030  0.025  0.023  0.030  0.023  0.026 Av=0.026 Sg=0.003
-LYS+1_0001_030   f   -5.606    -5.619  0.007  0.006  0.007  0.005  0.005  0.006 Av=0.006 Sg=0.001
-LYS+1_0001_031   f   -5.963    -5.978  0.008  0.008  0.009  0.010  0.009  0.008 Av=0.009 Sg=0.001
-LYS+1_0001_032   f   -6.166    -6.178  0.015  0.015  0.015  0.015  0.014  0.014 Av=0.015 Sg=0.001
-LYS+1_0001_033   f   -7.602    -7.647  0.152  0.140  0.155  0.145  0.148  0.157 Av=0.149 Sg=0.006
-LYS+1_0001_034   f   -6.506    -6.536  0.020  0.022  0.018  0.023  0.020  0.021 Av=0.021 Sg=0.002
-LYS+1_0001_035   f   -4.864    -4.875  0.003  0.003  0.003  0.003  0.002  0.002 Av=0.003 Sg=0.000
-LYS+1_0001_036   f   -6.153    -6.162  0.013  0.014  0.014  0.014  0.015  0.013 Av=0.014 Sg=0.001
-LYS+1_0001_037   f   -6.416    -6.425  0.033  0.028  0.026  0.028  0.031  0.030 Av=0.029 Sg=0.002
-LYS+1_0001_038   f   -5.717    -5.725  0.004  0.003  0.004  0.005  0.005  0.005 Av=0.004 Sg=0.001
-LYS+1_0001_039   f   -5.857    -5.865  0.009  0.011  0.010  0.010  0.012  0.009 Av=0.010 Sg=0.001
-LYS+1_0001_040   f   -7.435    -7.443  0.186  0.181  0.180  0.173  0.180  0.166 Av=0.178 Sg=0.007
-GLU01_0002_001   f 1003.395  1003.062  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_002   f    3.451     2.924  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_003   f    0.371     0.141  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_004   f    6.408     7.485  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_005   f    4.658     4.300  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_006   f    0.260    -0.274  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_007   f    4.152     3.946  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_008   f    3.385     2.907  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_009   f    3.899     3.402  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_010   f    0.595     0.358  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_011   f    0.958     0.715  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_012   f    3.738     3.225  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_013   f    4.101     3.665  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_014   f    3.917     3.525  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_015   f    4.715     4.509  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_016   f 1000.475  1000.142  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_017   f    2.264     1.737  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_018   f   -0.800    -1.030  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_019   f    2.732     3.809  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_020   f    3.086     2.728  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_021   f   -1.809    -2.343  0.001  0.000  0.000  0.002  0.001  0.000 Av=0.001 Sg=0.001
-GLU01_0002_022   f    2.232     2.026  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_023   f    2.470     1.992  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_024   f    2.770     2.273  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_025   f   -0.569    -0.806  0.001  0.001  0.001  0.001  0.000  0.001 Av=0.001 Sg=0.000
-GLU01_0002_026   f   -0.644    -0.887  0.001  0.002  0.001  0.001  0.001  0.000 Av=0.001 Sg=0.000
-GLU01_0002_027   f    1.583     1.070  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_028   f    2.589     2.153  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_029   f    2.136     1.744  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0002_030   f    2.360     2.154  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_031   f 1001.495  1001.167  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_032   f    3.652     3.133  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_033   f    1.008     0.778  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_034   f    5.329     6.405  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_035   f    5.832     5.470  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_036   f    1.779     1.241  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_037   f    7.055     6.850  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_038   f    4.555     4.077  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_039   f    5.791     5.288  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_040   f    2.045     1.806  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_041   f    1.110     0.864  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_042   f    3.103     2.597  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_043   f    4.726     4.278  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_044   f    5.692     5.303  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_045   f    4.910     4.704  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_046   f 1000.474  1000.146  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_047   f    2.108     1.589  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_048   f   -0.574    -0.804  0.001  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
-GLU02_0002_049   f    3.113     4.189  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_050   f    3.377     3.015  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_051   f   -1.392    -1.930  0.001  0.001  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
-GLU02_0002_052   f    2.859     2.654  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_053   f    3.014     2.536  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_054   f    3.260     2.757  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_055   f    0.249     0.010  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_056   f   -0.340    -0.586  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_057   f    1.393     0.887  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_058   f    2.746     2.298  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_059   f    3.194     2.805  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0002_060   f    2.336     2.130  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0002_061   f  999.582   999.258  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0002_062   f    0.524     0.006  0.003  0.004  0.006  0.004  0.003  0.004 Av=0.004 Sg=0.001
-GLU-1_0002_063   f   -3.175    -3.404  0.356  0.421  0.371  0.386  0.370  0.362 Av=0.378 Sg=0.024
-GLU-1_0002_064   f    0.804     1.894  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0002_065   f    0.863     0.509  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0002_066   f   -4.470    -5.002  0.130  0.118  0.132  0.128  0.151  0.166 Av=0.138 Sg=0.018
-GLU-1_0002_067   f   -0.595    -0.800  0.001  0.001  0.001  0.002  0.002  0.001 Av=0.001 Sg=0.000
-GLU-1_0002_068   f    0.918     0.444  0.004  0.003  0.003  0.004  0.003  0.003 Av=0.003 Sg=0.001
-GLU-1_0002_069   f    1.371     0.876  0.002  0.001  0.002  0.002  0.000  0.002 Av=0.002 Sg=0.001
-GLU-1_0002_070   f   -2.877    -3.113  0.260  0.212  0.221  0.223  0.231  0.220 Av=0.228 Sg=0.017
-GLU-1_0002_071   f   -2.896    -3.138  0.229  0.226  0.253  0.234  0.226  0.229 Av=0.233 Sg=0.010
-GLU-1_0002_072   f   -1.900    -2.404  0.003  0.003  0.003  0.004  0.003  0.003 Av=0.003 Sg=0.000
-GLU-1_0002_073   f    0.463     0.030  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0002_074   f   -1.002    -1.385  0.001  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0002_075   f   -0.914    -1.119  0.004  0.005  0.005  0.006  0.007  0.007 Av=0.006 Sg=0.001
-THR01_0003_001   f   -4.166    -3.993  0.025  0.029  0.026  0.026  0.025  0.026 Av=0.026 Sg=0.001
-THR01_0003_002   f   -2.017    -2.927  0.004  0.004  0.003  0.003  0.004  0.003 Av=0.004 Sg=0.000
-THR01_0003_003   f    1.325     1.498  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-THR01_0003_004   f   -5.116    -6.202  0.971  0.967  0.971  0.971  0.971  0.971 Av=0.970 Sg=0.002
+LYS01_0001_001   f    3.386     3.360  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS01_0001_002   f   -0.179    -0.195  0.073  0.071  0.079  0.076  0.084  0.073 Av=0.076 Sg=0.005
+LYS01_0001_003   f    1.712     1.701  0.003  0.002  0.004  0.002  0.003  0.003 Av=0.003 Sg=0.001
+LYS01_0001_004   f    0.975     0.964  0.006  0.007  0.008  0.007  0.007  0.008 Av=0.007 Sg=0.001
+LYS01_0001_005   f    0.396     0.389  0.031  0.028  0.029  0.024  0.024  0.028 Av=0.027 Sg=0.003
+LYS01_0001_006   f   -1.410    -1.416  0.291  0.285  0.279  0.310  0.294  0.293 Av=0.292 Sg=0.010
+LYS01_0001_007   f   -0.819    -0.828  0.128  0.141  0.127  0.133  0.136  0.135 Av=0.133 Sg=0.005
+LYS01_0001_008   f    0.243     0.233  0.052  0.051  0.053  0.049  0.049  0.051 Av=0.051 Sg=0.001
+LYS01_0001_009   f    0.251     0.236  0.088  0.089  0.092  0.089  0.083  0.091 Av=0.089 Sg=0.003
+LYS01_0001_010   f    0.633     0.620  0.014  0.013  0.014  0.013  0.013  0.013 Av=0.013 Sg=0.000
+LYS01_0001_011   f    0.508     0.493  0.017  0.018  0.018  0.020  0.018  0.016 Av=0.018 Sg=0.001
+LYS01_0001_012   f    0.229     0.217  0.023  0.029  0.024  0.025  0.023  0.024 Av=0.025 Sg=0.002
+LYS01_0001_013   f   -0.536    -0.566  0.081  0.081  0.081  0.073  0.075  0.077 Av=0.078 Sg=0.003
+LYS01_0001_014   f    0.576     0.567  0.013  0.015  0.017  0.015  0.014  0.013 Av=0.014 Sg=0.001
+LYS01_0001_015   f   -0.118    -0.127  0.054  0.048  0.049  0.044  0.053  0.046 Av=0.049 Sg=0.004
+LYS01_0001_016   f    0.015     0.006  0.034  0.038  0.037  0.035  0.036  0.038 Av=0.037 Sg=0.002
+LYS01_0001_017   f    0.788     0.779  0.010  0.010  0.010  0.008  0.010  0.010 Av=0.009 Sg=0.001
+LYS01_0001_018   f   -0.234    -0.240  0.048  0.039  0.047  0.043  0.042  0.046 Av=0.044 Sg=0.003
+LYS01_0001_019   f    0.574     0.566  0.010  0.011  0.012  0.010  0.012  0.013 Av=0.011 Sg=0.001
+LYS01_0001_020   f    0.371     0.363  0.023  0.024  0.022  0.024  0.024  0.023 Av=0.023 Sg=0.001
+LYS+1_0001_021   f   17.492    17.466  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_022   f   13.409    13.393  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_023   f   15.310    15.299  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_024   f   14.574    14.563  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_025   f   13.982    13.975  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_026   f   12.188    12.182  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_027   f   12.793    12.784  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_028   f   13.839    13.829  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_029   f   13.827    13.812  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_030   f   14.227    14.214  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_031   f   14.134    14.119  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_032   f   13.832    13.820  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_033   f   13.039    13.009  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_034   f   14.199    14.190  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_035   f   13.487    13.478  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_036   f   13.631    13.622  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_037   f   14.395    14.386  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_038   f   13.377    13.371  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_039   f   14.188    14.180  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0001_040   f   13.959    13.951  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_001   f 1004.412  1004.079  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_002   f    6.163     5.636  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_003   f    4.017     3.787  0.000  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+GLU01_0002_004   f    7.632     8.709  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_005   f    7.905     7.547  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_006   f    3.716     3.182  0.001  0.002  0.001  0.002  0.002  0.001 Av=0.002 Sg=0.000
+GLU01_0002_007   f    7.875     7.669  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_008   f    6.635     6.157  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_009   f    6.869     6.372  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_010   f    4.160     3.923  0.001  0.002  0.001  0.001  0.001  0.002 Av=0.001 Sg=0.000
+GLU01_0002_011   f    4.206     3.963  0.000  0.000  0.000  0.000  0.000  0.001 Av=0.000 Sg=0.000
+GLU01_0002_012   f    6.870     6.357  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_013   f    7.522     7.086  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_014   f    7.461     7.069  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_015   f    7.635     7.429  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_016   f 1001.692  1001.359  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_017   f    3.445     2.918  0.006  0.005  0.006  0.009  0.006  0.004 Av=0.006 Sg=0.002
+GLU01_0002_018   f    1.298     1.068  0.178  0.169  0.184  0.165  0.171  0.158 Av=0.171 Sg=0.009
+GLU01_0002_019   f    4.912     5.989  0.000  0.000  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
+GLU01_0002_020   f    5.183     4.825  0.001  0.001  0.000  0.000  0.001  0.001 Av=0.001 Sg=0.000
+GLU01_0002_021   f    0.999     0.465  0.171  0.201  0.190  0.209  0.198  0.211 Av=0.196 Sg=0.015
+GLU01_0002_022   f    5.155     4.949  0.000  0.001  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_023   f    3.915     3.437  0.004  0.003  0.001  0.002  0.004  0.004 Av=0.003 Sg=0.001
+GLU01_0002_024   f    4.147     3.650  0.016  0.016  0.017  0.013  0.020  0.019 Av=0.017 Sg=0.002
+GLU01_0002_025   f    1.440     1.203  0.128  0.128  0.139  0.115  0.115  0.113 Av=0.123 Sg=0.010
+GLU01_0002_026   f    1.484     1.241  0.064  0.053  0.045  0.061  0.052  0.059 Av=0.056 Sg=0.007
+GLU01_0002_027   f    4.149     3.636  0.001  0.000  0.001  0.001  0.002  0.001 Av=0.001 Sg=0.001
+GLU01_0002_028   f    4.802     4.366  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_029   f    4.742     4.350  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0002_030   f    4.916     4.710  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_031   f 1004.457  1004.129  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_032   f    6.378     5.859  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_033   f    4.205     3.975  0.000  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+GLU02_0002_034   f    7.524     8.600  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_035   f    8.206     7.844  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_036   f    4.049     3.511  0.001  0.002  0.001  0.001  0.002  0.001 Av=0.001 Sg=0.001
+GLU02_0002_037   f    8.255     8.050  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_038   f    7.128     6.650  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_039   f    7.206     6.703  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_040   f    4.603     4.364  0.001  0.000  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
+GLU02_0002_041   f    4.268     4.022  0.000  0.000  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
+GLU02_0002_042   f    6.787     6.281  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_043   f    7.617     7.169  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_044   f    8.394     8.005  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_045   f    7.687     7.481  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_046   f 1001.735  1001.407  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_047   f    3.657     3.138  0.004  0.006  0.004  0.004  0.006  0.006 Av=0.005 Sg=0.001
+GLU02_0002_048   f    1.486     1.256  0.089  0.083  0.093  0.069  0.095  0.087 Av=0.086 Sg=0.009
+GLU02_0002_049   f    4.804     5.880  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_050   f    5.488     5.126  0.001  0.000  0.000  0.001  0.001  0.000 Av=0.001 Sg=0.000
+GLU02_0002_051   f    1.327     0.789  0.107  0.125  0.104  0.108  0.116  0.145 Av=0.117 Sg=0.015
+GLU02_0002_052   f    5.538     5.333  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_053   f    4.407     3.929  0.001  0.001  0.001  0.002  0.002  0.001 Av=0.001 Sg=0.000
+GLU02_0002_054   f    4.489     3.986  0.003  0.003  0.004  0.005  0.004  0.005 Av=0.004 Sg=0.001
+GLU02_0002_055   f    1.882     1.643  0.070  0.077  0.070  0.077  0.074  0.064 Av=0.072 Sg=0.005
+GLU02_0002_056   f    1.550     1.304  0.149  0.117  0.134  0.148  0.120  0.112 Av=0.130 Sg=0.016
+GLU02_0002_057   f    4.067     3.561  0.000  0.001  0.000  0.001  0.001  0.001 Av=0.001 Sg=0.000
+GLU02_0002_058   f    4.898     4.450  0.000  0.000  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
+GLU02_0002_059   f    5.675     5.286  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0002_060   f    4.966     4.760  0.000  0.000  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_061   f 1015.670  1015.346  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_062   f   17.616    17.098  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_063   f   15.423    15.194  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_064   f   18.693    19.783  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_065   f   19.287    18.933  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_066   f   15.174    14.642  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_067   f   19.291    19.086  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_068   f   18.168    17.694  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_069   f   18.310    17.815  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_070   f   15.612    15.376  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_071   f   15.529    15.287  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_072   f   18.233    17.729  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_073   f   19.026    18.593  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_074   f   18.766    18.383  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0002_075   f   18.945    18.740  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+THR01_0003_001   f   -2.267    -2.094  0.078  0.077  0.076  0.077  0.077  0.074 Av=0.076 Sg=0.001
+THR01_0003_002   f   -2.265    -2.092  0.076  0.078  0.075  0.075  0.077  0.074 Av=0.076 Sg=0.001
+THR01_0003_003   f   -2.511    -3.597  0.842  0.841  0.845  0.845  0.842  0.848 Av=0.844 Sg=0.002
+THR01_0003_004   f    0.549    -0.361  0.004  0.004  0.004  0.003  0.004  0.004 Av=0.004 Sg=0.000
 ALA01_0004_001   t   -5.675    -5.754  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
 ALA01_0005_001   t   -4.099    -4.249  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
 ALA01_0006_001   t   -3.711    -3.800  1.000  1.000  1.000  1.000  1.000  1.000 Av=1.000 Sg=0.000
-LYS01_0007_001   f   -1.385    -1.572  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_002   f    0.396     0.174  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_003   f    0.948     0.729  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_004   f    0.335     0.133  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_005   f    1.652     1.469  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_006   f   -2.526    -2.712  0.000  0.001  0.001  0.001  0.001  0.000 Av=0.001 Sg=0.000
-LYS01_0007_007   f    2.655     2.476  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_008   f   -1.401    -1.579  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_009   f   -0.183    -0.364  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_010   f    1.104     0.911  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_011   f    0.958     0.710  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_012   f   -1.571    -1.769  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_013   f   -0.314    -0.504  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_014   f   -0.559    -0.774  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_015   f    0.851     0.668  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_016   f    1.577     1.301  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_017   f    0.885     0.521  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_018   f    0.547     0.262  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_019   f    1.448     1.167  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS01_0007_020   f    2.046     1.781  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS+1_0007_021   f   -5.943    -6.131  0.155  0.153  0.146  0.155  0.154  0.159 Av=0.154 Sg=0.004
-LYS+1_0007_022   f   -3.797    -4.020  0.006  0.006  0.004  0.006  0.005  0.005 Av=0.005 Sg=0.001
-LYS+1_0007_023   f   -3.328    -3.549  0.002  0.002  0.001  0.002  0.001  0.002 Av=0.002 Sg=0.001
-LYS+1_0007_024   f   -4.059    -4.261  0.006  0.004  0.006  0.009  0.005  0.006 Av=0.006 Sg=0.001
-LYS+1_0007_025   f    0.276     0.093  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS+1_0007_026   f   -6.447    -6.633  0.550  0.570  0.558  0.550  0.565  0.566 Av=0.560 Sg=0.008
-LYS+1_0007_027   f   -0.110    -0.289  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS+1_0007_028   f   -5.795    -5.974  0.183  0.177  0.186  0.188  0.180  0.176 Av=0.182 Sg=0.005
-LYS+1_0007_029   f   -1.897    -2.078  0.003  0.002  0.003  0.003  0.002  0.002 Av=0.002 Sg=0.000
-LYS+1_0007_030   f   -2.894    -3.087  0.002  0.001  0.001  0.002  0.001  0.000 Av=0.001 Sg=0.001
-LYS+1_0007_031   f   -3.057    -3.305  0.001  0.000  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
-LYS+1_0007_032   f   -3.370    -3.569  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS+1_0007_033   f   -4.622    -4.812  0.040  0.040  0.036  0.035  0.037  0.031 Av=0.036 Sg=0.003
-LYS+1_0007_034   f   -4.598    -4.813  0.044  0.036  0.046  0.038  0.040  0.040 Av=0.040 Sg=0.004
-LYS+1_0007_035   f   -2.803    -2.986  0.000  0.001  0.000  0.001  0.000  0.001 Av=0.000 Sg=0.000
-LYS+1_0007_036   f   -1.033    -1.311  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-LYS+1_0007_037   f   -3.029    -3.395  0.002  0.001  0.002  0.001  0.002  0.001 Av=0.001 Sg=0.000
-LYS+1_0007_038   f   -3.571    -3.856  0.004  0.004  0.006  0.006  0.005  0.007 Av=0.005 Sg=0.001
-LYS+1_0007_039   f   -2.956    -3.238  0.002  0.002  0.002  0.002  0.002  0.001 Av=0.002 Sg=0.000
-LYS+1_0007_040   f   -0.733    -0.998  0.000  0.000  0.001  0.000  0.000  0.001 Av=0.000 Sg=0.000
-PHE01_0008_001   f   -6.873    -6.990  0.374  0.361  0.362  0.361  0.368  0.370 Av=0.366 Sg=0.006
-PHE01_0008_002   f   -3.246    -3.433  0.001  0.000  0.001  0.000  0.000  0.000 Av=0.000 Sg=0.000
-PHE01_0008_003   f   -7.245    -7.361  0.625  0.638  0.637  0.639  0.631  0.629 Av=0.633 Sg=0.006
+LYS01_0007_001   f    0.120    -0.067  0.373  0.365  0.374  0.365  0.363  0.400 Av=0.373 Sg=0.014
+LYS01_0007_002   f    2.007     1.785  0.026  0.027  0.025  0.024  0.026  0.022 Av=0.025 Sg=0.002
+LYS01_0007_003   f    3.664     3.367  0.001  0.001  0.001  0.002  0.001  0.002 Av=0.001 Sg=0.000
+LYS01_0007_004   f    2.391     2.208  0.038  0.033  0.043  0.032  0.033  0.032 Av=0.035 Sg=0.005
+LYS01_0007_005   f    2.027     1.813  0.029  0.033  0.036  0.030  0.035  0.030 Av=0.032 Sg=0.003
+LYS01_0007_006   f    2.184     2.006  0.002  0.002  0.004  0.002  0.004  0.002 Av=0.003 Sg=0.001
+LYS01_0007_007   f    3.751     3.572  0.007  0.006  0.005  0.007  0.005  0.005 Av=0.006 Sg=0.001
+LYS01_0007_008   f    0.120    -0.058  0.253  0.267  0.255  0.260  0.262  0.262 Av=0.260 Sg=0.005
+LYS01_0007_009   f    2.047     1.869  0.014  0.012  0.013  0.017  0.014  0.014 Av=0.014 Sg=0.002
+LYS01_0007_010   f    0.715     0.534  0.087  0.088  0.073  0.100  0.083  0.074 Av=0.085 Sg=0.010
+LYS01_0007_011   f    2.744     2.543  0.004  0.004  0.003  0.005  0.003  0.005 Av=0.004 Sg=0.001
+LYS01_0007_012   f    2.413     2.220  0.008  0.008  0.006  0.007  0.007  0.006 Av=0.007 Sg=0.001
+LYS01_0007_013   f    2.998     2.711  0.003  0.004  0.004  0.005  0.003  0.004 Av=0.004 Sg=0.001
+LYS01_0007_014   f    1.087     0.811  0.063  0.065  0.063  0.057  0.066  0.055 Av=0.062 Sg=0.004
+LYS01_0007_015   f    3.332     3.146  0.002  0.002  0.004  0.003  0.003  0.004 Av=0.003 Sg=0.001
+LYS01_0007_016   f    2.675     2.399  0.006  0.006  0.006  0.005  0.005  0.006 Av=0.005 Sg=0.000
+LYS01_0007_017   f    1.553     1.374  0.055  0.055  0.053  0.050  0.051  0.049 Av=0.052 Sg=0.003
+LYS01_0007_018   f    3.867     3.667  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS01_0007_019   f    2.056     1.692  0.019  0.015  0.023  0.021  0.022  0.021 Av=0.020 Sg=0.003
+LYS01_0007_020   f    2.731     2.450  0.010  0.008  0.010  0.010  0.013  0.008 Av=0.010 Sg=0.002
+LYS+1_0007_021   f   13.721    13.533  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_022   f   15.608    15.385  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_023   f   17.261    16.964  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_024   f   15.999    15.816  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_025   f   15.625    15.411  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_026   f   15.755    15.577  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_027   f   17.361    17.182  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_028   f   13.726    13.547  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_029   f   15.645    15.467  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_030   f   14.278    14.097  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_031   f   16.317    16.116  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_032   f   16.009    15.816  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_033   f   16.929    16.641  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_034   f   14.692    14.416  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_035   f   16.916    16.730  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_036   f   16.239    15.961  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_037   f   15.133    14.954  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_038   f   17.454    17.254  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_039   f   15.640    15.274  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+LYS+1_0007_040   f   16.325    16.043  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+PHE01_0008_001   f   -6.873    -6.990  0.352  0.368  0.363  0.349  0.352  0.359 Av=0.357 Sg=0.008
+PHE01_0008_002   f   -3.246    -3.433  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+PHE01_0008_003   f   -7.245    -7.361  0.648  0.632  0.637  0.651  0.648  0.641 Av=0.643 Sg=0.007
 PHE01_0008_004   f   -4.713    -4.835  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 PHE01_0008_005   f   -3.198    -3.399  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 PHE01_0008_006   f   -0.350    -0.534  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 PHE01_0008_007   f    0.193     0.037  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 PHE01_0008_008   f   -0.283    -1.058  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_001   f    4.736     4.414  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_002   f    0.068    -0.244  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_003   f    1.797     1.475  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_004   f    3.590     3.448  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_005   f    4.228     4.103  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_006   f    5.441     5.314  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_007   f    3.936     3.799  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_008   f    3.941     3.816  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_009   f    3.116     2.982  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_010   f    3.284     3.149  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_011   f    3.073     2.915  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_012   f    3.937     3.779  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_013   f    3.042     2.881  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_014   f    0.818     0.687  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_015   f    2.865     2.733  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_016   f    3.705     3.574  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_017   f    1.666     1.535  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_018   f    3.124     2.802  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_019   f   -1.719    -2.031  0.001  0.002  0.001  0.001  0.001  0.003 Av=0.001 Sg=0.001
-GLU01_0009_020   f    1.983     1.841  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_021   f    2.482     2.357  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_022   f    2.975     2.848  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_023   f    2.003     1.866  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_024   f    2.165     2.040  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_025   f    1.410     1.276  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_026   f    1.121     0.963  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_027   f    1.206     1.048  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_028   f    1.188     1.027  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_029   f   -0.823    -0.954  0.001  0.001  0.001  0.000  0.001  0.001 Av=0.001 Sg=0.000
-GLU01_0009_030   f    0.388     0.256  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_031   f    0.264     0.133  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU01_0009_032   f   -0.304    -0.435  0.001  0.000  0.001  0.001  0.000  0.000 Av=0.001 Sg=0.000
-GLU02_0009_033   f    7.519     7.189  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_034   f    0.592     0.286  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_035   f    0.154    -0.175  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_036   f    4.500     4.355  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_037   f    4.035     3.909  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_038   f    4.399     4.274  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_039   f    4.047     3.914  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_040   f    4.984     4.860  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_041   f    3.712     3.576  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_042   f    3.381     3.249  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_043   f    3.563     3.408  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_044   f    3.360     3.200  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_045   f    3.322     3.159  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_046   f    1.636     1.505  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_047   f    1.630     1.498  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_048   f    1.762     1.631  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_049   f    1.768     1.637  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_050   f    5.059     4.729  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_051   f   -1.600    -1.929  0.001  0.001  0.001  0.000  0.001  0.001 Av=0.001 Sg=0.000
-GLU02_0009_052   f    2.183     2.038  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_053   f    2.456     2.330  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_054   f    2.855     2.730  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_055   f    2.111     1.978  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_056   f    2.877     2.753  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_057   f    2.237     2.101  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_058   f    1.418     1.263  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_059   f    1.587     1.427  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_060   f    1.121     0.958  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_061   f   -0.369    -0.500  0.001  0.001  0.000  0.001  0.000  0.001 Av=0.000 Sg=0.000
-GLU02_0009_062   f   -0.214    -0.346  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_063   f    0.094    -0.037  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU02_0009_064   f   -0.058    -0.189  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0009_065   f   -0.315    -0.632  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0009_066   f   -5.367    -5.684  0.721  0.725  0.685  0.713  0.758  0.708 Av=0.718 Sg=0.024
-GLU-1_0009_067   f   -2.073    -2.214  0.003  0.002  0.002  0.005  0.002  0.002 Av=0.003 Sg=0.001
-GLU-1_0009_068   f   -1.739    -1.862  0.002  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
-GLU-1_0009_069   f   -1.336    -1.460  0.002  0.000  0.000  0.001  0.001  0.003 Av=0.001 Sg=0.001
-GLU-1_0009_070   f   -2.345    -2.478  0.005  0.004  0.005  0.005  0.002  0.003 Av=0.004 Sg=0.001
-GLU-1_0009_071   f   -1.510    -1.633  0.002  0.001  0.001  0.000  0.000  0.001 Av=0.001 Sg=0.001
-GLU-1_0009_072   f   -2.569    -2.700  0.004  0.003  0.004  0.004  0.003  0.004 Av=0.004 Sg=0.001
-GLU-1_0009_073   f   -2.888    -3.043  0.010  0.004  0.005  0.010  0.006  0.008 Av=0.007 Sg=0.002
-GLU-1_0009_074   f   -2.570    -2.727  0.005  0.003  0.004  0.005  0.003  0.002 Av=0.004 Sg=0.001
-GLU-1_0009_075   f   -2.946    -3.106  0.007  0.008  0.009  0.006  0.007  0.004 Av=0.007 Sg=0.002
-GLU-1_0009_076   f   -3.678    -3.809  0.141  0.153  0.169  0.147  0.122  0.170 Av=0.150 Sg=0.018
-GLU-1_0009_077   f   -3.393    -3.525  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLU-1_0009_078   f   -3.501    -3.632  0.007  0.003  0.005  0.005  0.009  0.006 Av=0.006 Sg=0.002
-GLU-1_0009_079   f   -3.365    -3.495  0.085  0.090  0.105  0.093  0.081  0.082 Av=0.089 Sg=0.009
-ARG01_0010_001   f   -0.624    -0.679  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_002   f   -0.187    -0.336  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_003   f   -0.560    -0.620  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_004   f   -0.370    -0.533  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_005   f   -1.599    -1.706  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_006   f    2.085     1.833  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_007   f    0.394     0.253  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_008   f   -5.385    -5.428  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_009   f   -3.818    -3.861  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_010   f   -0.908    -0.984  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_011   f   -3.234    -3.327  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_012   f   -3.060    -3.133  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_013   f   -0.176    -0.275  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_014   f   -1.074    -1.496  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_015   f    1.436     1.090  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_016   f    0.867     0.829  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_017   f    1.313     0.955  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_018   f   -3.308    -3.529  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_019   f    1.873     1.411  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG01_0010_020   f   -0.665    -0.845  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_021   f   -0.020    -0.075  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_022   f    0.316     0.256  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_023   f    0.670     0.508  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_024   f   -0.590    -0.697  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_025   f    1.639     1.394  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_026   f    1.411     1.270  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_027   f   -0.203    -0.279  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_028   f   -1.811    -1.884  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_029   f    0.907     0.807  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_030   f   -0.350    -0.768  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_031   f    2.165     1.808  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_032   f    1.863     1.825  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_033   f    1.596     1.237  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_034   f   -2.409    -2.632  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_035   f    2.653     2.194  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_036   f    0.185     0.005  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_037   f   -0.218    -0.273  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_038   f    0.791     0.642  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_039   f    0.472     0.309  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_040   f   -4.874    -4.917  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_041   f   -2.757    -2.800  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_042   f   -2.140    -2.233  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_043   f    0.854     0.754  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_044   f   -0.730    -1.131  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_045   f    2.172     1.816  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_046   f    1.672     1.314  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_047   f    2.603     2.142  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG02_0010_048   f    0.143    -0.037  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_049   f    0.783     0.635  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_050   f    0.381     0.322  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_051   f    0.625     0.466  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_052   f   -0.563    -0.669  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_053   f    1.707     1.451  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_054   f    1.416     1.275  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_055   f   -4.778    -4.821  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_056   f   -2.671    -2.714  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_057   f   -0.096    -0.172  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_058   f   -2.233    -2.325  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_059   f    0.921     0.821  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_060   f    2.274     1.917  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_061   f    1.836     1.798  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_062   f    1.909     1.550  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_063   f   -2.267    -2.490  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_064   f   -0.267    -0.323  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_065   f   -0.188    -0.247  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_066   f    0.549     0.386  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_067   f   -1.054    -1.159  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_068   f    0.642     0.501  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_069   f   -4.941    -4.984  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_070   f   -3.356    -3.399  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_071   f   -0.354    -0.429  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_072   f   -2.561    -2.653  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_073   f   -2.012    -2.085  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_074   f   -0.469    -0.893  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_075   f    2.637     2.176  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG03_0010_076   f   -0.241    -0.420  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_077   f   -7.495    -7.551  0.016  0.017  0.011  0.013  0.012  0.011 Av=0.013 Sg=0.003
-ARG+1_0010_078   f   -8.192    -8.341  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_079   f   -7.909    -7.969  0.000  0.000  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_080   f   -7.223    -7.386  0.001  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_081   f   -9.023    -9.130  0.001  0.001  0.000  0.001  0.002  0.002 Av=0.001 Sg=0.001
-ARG+1_0010_082   f   -5.366    -5.622  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_083   f   -7.297    -7.438  0.000  0.000  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_084   f  -13.196   -13.239  0.829  0.843  0.886  0.835  0.795  0.826 Av=0.836 Sg=0.030
-ARG+1_0010_085   f  -10.979   -11.022  0.057  0.052  0.024  0.050  0.039  0.035 Av=0.043 Sg=0.012
-ARG+1_0010_086   f   -8.518    -8.594  0.000  0.001  0.000  0.001  0.001  0.001 Av=0.001 Sg=0.000
-ARG+1_0010_087   f  -10.552   -10.645  0.015  0.011  0.010  0.015  0.016  0.017 Av=0.014 Sg=0.003
-ARG+1_0010_088   f  -10.582   -10.655  0.009  0.010  0.004  0.011  0.010  0.004 Av=0.008 Sg=0.003
-ARG+1_0010_089   f   -7.284    -7.384  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_090   f   -7.263    -7.687  0.001  0.002  0.001  0.002  0.004  0.002 Av=0.002 Sg=0.001
-ARG+1_0010_091   f   -5.631    -5.988  0.000  0.001  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_092   f   -6.273    -6.311  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_093   f   -5.942    -6.302  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_094   f  -10.856   -11.079  0.071  0.062  0.063  0.072  0.118  0.100 Av=0.081 Sg=0.023
-ARG+1_0010_095   f   -5.888    -6.350  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-ARG+1_0010_096   f   -8.041    -8.221  0.001  0.000  0.001  0.001  0.000  0.000 Av=0.001 Sg=0.000
-GLN01_0011_001   f    9.405     9.396  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLN01_0011_002   f    1.318     1.318  0.001  0.001  0.001  0.001  0.002  0.001 Av=0.001 Sg=0.000
-GLN01_0011_003   f   -0.815    -0.818  0.073  0.067  0.077  0.064  0.067  0.074 Av=0.070 Sg=0.005
-GLN01_0011_004   f    1.946     1.940  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLN01_0011_005   f    1.176     1.176  0.001  0.001  0.001  0.002  0.001  0.001 Av=0.001 Sg=0.000
-GLN01_0011_006   f    0.986     0.985  0.001  0.002  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
-GLN01_0011_007   f    4.580     4.566  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLN01_0011_008   f    3.017     3.007  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLN01_0011_009   f    0.880     0.880  0.004  0.005  0.004  0.005  0.005  0.004 Av=0.005 Sg=0.001
-GLN01_0011_010   f    0.943     0.943  0.002  0.003  0.002  0.002  0.002  0.002 Av=0.002 Sg=0.000
-GLN01_0011_011   f   -1.092    -1.094  0.153  0.157  0.167  0.149  0.159  0.163 Av=0.158 Sg=0.007
-GLN01_0011_012   f   -1.043    -1.045  0.201  0.194  0.195  0.194  0.183  0.186 Av=0.192 Sg=0.006
-GLN01_0011_013   f   -2.008    -2.010  0.528  0.534  0.515  0.548  0.540  0.534 Av=0.533 Sg=0.011
-GLN01_0011_014   f   -0.302    -0.303  0.033  0.032  0.034  0.032  0.036  0.030 Av=0.033 Sg=0.002
-GLN01_0011_015   f    2.095     2.089  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLN01_0011_016   f    1.685     1.685  0.001  0.001  0.000  0.001  0.001  0.000 Av=0.001 Sg=0.000
-GLN01_0011_017   f    2.453     2.453  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLN01_0011_018   f    2.484     2.483  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-GLN01_0011_019   f    0.786     0.785  0.001  0.002  0.002  0.002  0.002  0.002 Av=0.002 Sg=0.000
-GLN01_0011_020   f    2.856     2.847  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS01_0012_001   f   -6.451    -6.452  0.066  0.068  0.069  0.070  0.073  0.069 Av=0.069 Sg=0.002
-HIS01_0012_002   f   -6.239    -6.240  0.152  0.144  0.146  0.153  0.149  0.148 Av=0.148 Sg=0.004
-HIS01_0012_003   f   -3.897    -3.897  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS01_0012_004   f    1.278     1.278  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS01_0012_005   f   -5.841    -5.842  0.101  0.107  0.106  0.098  0.103  0.103 Av=0.103 Sg=0.003
-HIS01_0012_006   f   -2.334    -2.334  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS01_0012_007   f   -4.708    -4.708  0.000  0.000  0.001  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS01_0012_008   f   -4.109    -4.109  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS01_0012_009   f   -1.426    -1.426  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS01_0012_010   f   -4.022    -4.022  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS02_0012_011   f   -6.872    -6.873  0.137  0.133  0.137  0.130  0.142  0.142 Av=0.137 Sg=0.005
-HIS02_0012_012   f   -6.093    -6.094  0.140  0.140  0.145  0.143  0.138  0.138 Av=0.141 Sg=0.003
-HIS02_0012_013   f   -4.591    -4.591  0.000  0.000  0.000  0.000  0.000  0.001 Av=0.000 Sg=0.000
-HIS02_0012_014   f    1.537     1.537  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS02_0012_015   f   -6.166    -6.167  0.225  0.227  0.215  0.224  0.213  0.226 Av=0.222 Sg=0.006
-HIS02_0012_016   f   -2.953    -2.953  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS02_0012_017   f   -5.071    -5.071  0.001  0.000  0.001  0.001  0.001  0.000 Av=0.001 Sg=0.000
-HIS02_0012_018   f   -4.937    -4.937  0.001  0.000  0.000  0.001  0.001  0.000 Av=0.001 Sg=0.000
-HIS02_0012_019   f   -2.146    -2.146  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS02_0012_020   f   -4.679    -4.679  0.001  0.000  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
-HIS+1_0012_021   f   -6.669    -6.670  0.093  0.085  0.090  0.086  0.090  0.086 Av=0.088 Sg=0.003
-HIS+1_0012_022   f   -5.468    -5.469  0.044  0.050  0.046  0.046  0.048  0.041 Av=0.046 Sg=0.003
-HIS+1_0012_023   f   -4.942    -4.942  0.001  0.001  0.001  0.001  0.000  0.001 Av=0.000 Sg=0.000
-HIS+1_0012_024   f    2.928     2.928  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS+1_0012_025   f   -5.230    -5.231  0.038  0.041  0.039  0.046  0.040  0.043 Av=0.041 Sg=0.003
-HIS+1_0012_026   f   -3.063    -3.063  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS+1_0012_027   f   -5.125    -5.125  0.000  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
-HIS+1_0012_028   f   -5.158    -5.158  0.001  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
-HIS+1_0012_029   f   -2.066    -2.066  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-HIS+1_0012_030   f   -4.867    -4.867  0.001  0.001  0.001  0.001  0.000  0.001 Av=0.001 Sg=0.000
-MET01_0013_001   f   -6.068    -6.070  0.017  0.015  0.016  0.012  0.017  0.013 Av=0.015 Sg=0.002
-MET01_0013_002   f   -0.402    -0.405  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_003   f   -2.695    -2.695  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_004   f   -4.341    -4.344  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_005   f   -6.722    -6.726  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_006   f   -0.592    -0.599  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_007   f   -6.866    -6.880  0.005  0.003  0.003  0.004  0.001  0.002 Av=0.003 Sg=0.001
-MET01_0013_008   f   -2.719    -2.722  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_009   f   -6.289    -6.289  0.011  0.008  0.013  0.013  0.012  0.010 Av=0.011 Sg=0.002
-MET01_0013_010   f   -8.854    -8.854  0.510  0.531  0.569  0.536  0.499  0.550 Av=0.532 Sg=0.026
-MET01_0013_011   f   -7.227    -7.227  0.033  0.024  0.027  0.027  0.031  0.026 Av=0.028 Sg=0.003
-MET01_0013_012   f   -2.670    -2.673  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_013   f   -5.273    -5.273  0.001  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
-MET01_0013_014   f   -8.643    -8.645  0.412  0.407  0.364  0.396  0.427  0.386 Av=0.399 Sg=0.022
-MET01_0013_015   f   -6.244    -6.247  0.010  0.008  0.007  0.008  0.009  0.008 Av=0.008 Sg=0.001
-MET01_0013_016   f   -3.206    -3.208  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_017   f   -2.274    -2.278  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_018   f   -4.866    -4.867  0.002  0.003  0.001  0.003  0.003  0.003 Av=0.003 Sg=0.001
-MET01_0013_019   f   -1.081    -1.088  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
-MET01_0013_020   f   -2.586    -2.590  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_001   f    8.225     7.903  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_002   f    3.423     3.111  0.003  0.003  0.001  0.003  0.004  0.002 Av=0.003 Sg=0.001
+GLU01_0009_003   f    4.516     4.194  0.000  0.000  0.001  0.000  0.001  0.001 Av=0.000 Sg=0.000
+GLU01_0009_004   f    4.121     3.749  0.001  0.001  0.001  0.001  0.000  0.001 Av=0.001 Sg=0.000
+GLU01_0009_005   f    7.041     6.899  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_006   f    7.502     7.377  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_007   f    7.608     7.483  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_008   f    6.711     6.577  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_009   f    6.708     6.574  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_010   f    7.507     7.353  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_011   f    6.397     6.239  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_012   f    6.817     6.659  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_013   f    6.254     6.093  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_014   f    4.155     4.024  0.001  0.002  0.003  0.002  0.002  0.001 Av=0.002 Sg=0.001
+GLU01_0009_015   f    5.305     5.173  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_016   f    5.082     4.951  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_017   f    4.465     4.334  0.001  0.001  0.001  0.002  0.001  0.002 Av=0.002 Sg=0.000
+GLU01_0009_018   f    5.501     5.179  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_019   f    0.701     0.389  0.236  0.255  0.223  0.216  0.234  0.231 Av=0.232 Sg=0.013
+GLU01_0009_020   f    4.319     4.177  0.000  0.000  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_021   f    4.782     4.657  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_022   f    4.888     4.763  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_023   f    3.986     3.852  0.000  0.000  0.001  0.000  0.000  0.001 Av=0.000 Sg=0.000
+GLU01_0009_024   f    4.786     4.632  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_025   f    3.677     3.519  0.001  0.001  0.001  0.001  0.001  0.000 Av=0.001 Sg=0.000
+GLU01_0009_026   f    4.098     3.940  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_027   f    3.534     3.373  0.001  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+GLU01_0009_028   f    1.434     1.303  0.168  0.156  0.172  0.165  0.155  0.156 Av=0.162 Sg=0.007
+GLU01_0009_029   f    2.583     2.451  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_030   f    2.362     2.231  0.001  0.000  0.001  0.001  0.000  0.000 Av=0.000 Sg=0.000
+GLU01_0009_031   f    1.744     1.613  0.115  0.119  0.130  0.119  0.108  0.128 Av=0.120 Sg=0.008
+GLU02_0009_032   f   10.018     9.688  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_033   f    3.936     3.621  0.001  0.001  0.001  0.001  0.000  0.001 Av=0.001 Sg=0.000
+GLU02_0009_034   f    4.606     4.219  0.000  0.000  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_035   f    7.279     7.134  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_036   f    7.616     7.490  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_037   f    7.861     7.737  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_038   f    7.034     6.898  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_039   f    6.698     6.566  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_040   f    8.070     7.916  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_041   f    6.399     6.244  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_042   f    6.586     6.426  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_043   f    6.401     6.238  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_044   f    4.123     3.992  0.001  0.002  0.001  0.003  0.002  0.003 Av=0.002 Sg=0.001
+GLU02_0009_045   f    4.727     4.595  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_046   f    4.833     4.702  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_047   f    4.769     4.638  0.001  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+GLU02_0009_048   f    7.300     6.970  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_049   f    1.028     0.681  0.159  0.159  0.154  0.165  0.171  0.162 Av=0.162 Sg=0.006
+GLU02_0009_050   f    1.887     1.500  0.043  0.034  0.037  0.040  0.028  0.038 Av=0.037 Sg=0.005
+GLU02_0009_051   f    4.559     4.414  0.000  0.001  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_052   f    4.894     4.768  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_053   f    5.142     5.018  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_054   f    4.311     4.175  0.000  0.000  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_055   f    3.980     3.848  0.000  0.000  0.001  0.000  0.000  0.001 Av=0.000 Sg=0.000
+GLU02_0009_056   f    5.349     5.195  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_057   f    3.677     3.522  0.000  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+GLU02_0009_058   f    3.864     3.704  0.000  0.000  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
+GLU02_0009_059   f    3.680     3.517  0.001  0.001  0.001  0.000  0.001  0.000 Av=0.001 Sg=0.000
+GLU02_0009_060   f    1.403     1.272  0.198  0.206  0.203  0.215  0.222  0.199 Av=0.207 Sg=0.009
+GLU02_0009_061   f    2.010     1.878  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU02_0009_062   f    2.115     1.984  0.002  0.002  0.002  0.002  0.004  0.002 Av=0.002 Sg=0.001
+GLU02_0009_063   f    2.050     1.919  0.065  0.052  0.062  0.056  0.063  0.066 Av=0.061 Sg=0.005
+GLU-1_0009_064   f   19.622    19.305  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_065   f   14.772    14.471  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_066   f   18.419    18.278  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_067   f   19.173    19.049  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_068   f   18.984    18.861  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_069   f   18.126    17.997  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_070   f   18.845    18.693  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_071   f   17.583    17.428  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_072   f   17.832    17.675  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_073   f   17.433    17.273  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_074   f   15.394    15.263  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_075   f   15.977    15.845  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_076   f   16.100    15.969  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLU-1_0009_077   f   15.867    15.737  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG01_0010_001   f    2.512     2.457  0.181  0.142  0.175  0.174  0.156  0.135 Av=0.160 Sg=0.019
+ARG01_0010_002   f    3.715     3.655  0.001  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+ARG01_0010_003   f    3.167     3.004  0.008  0.010  0.011  0.012  0.009  0.009 Av=0.010 Sg=0.002
+ARG01_0010_004   f    5.066     5.004  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG01_0010_005   f    1.171     1.113  0.059  0.062  0.061  0.055  0.069  0.065 Av=0.062 Sg=0.005
+ARG01_0010_006   f    1.903     1.822  0.006  0.009  0.006  0.009  0.006  0.008 Av=0.007 Sg=0.002
+ARG01_0010_007   f    2.074     2.030  0.060  0.067  0.067  0.077  0.060  0.054 Av=0.064 Sg=0.008
+ARG01_0010_008   f    4.765     4.712  0.000  0.000  0.000  0.000  0.000  0.001 Av=0.000 Sg=0.000
+ARG01_0010_009   f    4.875     4.816  0.001  0.002  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+ARG01_0010_010   f    3.627     3.551  0.001  0.000  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
+ARG01_0010_011   f    1.147     1.054  0.026  0.034  0.028  0.029  0.031  0.031 Av=0.030 Sg=0.003
+ARG01_0010_012   f    2.284     2.207  0.005  0.006  0.005  0.006  0.007  0.005 Av=0.006 Sg=0.001
+ARG01_0010_013   f    1.667     1.594  0.017  0.016  0.016  0.015  0.016  0.020 Av=0.017 Sg=0.002
+ARG01_0010_014   f    2.088     1.666  0.017  0.028  0.023  0.019  0.033  0.016 Av=0.023 Sg=0.007
+ARG01_0010_015   f    5.526     5.180  0.000  0.000  0.001  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG01_0010_016   f    4.898     4.819  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG01_0010_017   f    4.142     4.046  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG01_0010_018   f    4.415     4.284  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG01_0010_019   f    4.045     3.882  0.000  0.000  0.001  0.001  0.000  0.000 Av=0.000 Sg=0.000
+ARG01_0010_020   f    2.306     2.109  0.008  0.010  0.006  0.005  0.008  0.007 Av=0.007 Sg=0.002
+ARG02_0010_021   f    2.941     2.886  0.057  0.062  0.082  0.055  0.057  0.055 Av=0.061 Sg=0.010
+ARG02_0010_022   f    4.190     4.130  0.001  0.001  0.000  0.001  0.000  0.000 Av=0.001 Sg=0.000
+ARG02_0010_023   f    3.645     3.483  0.002  0.002  0.001  0.003  0.002  0.002 Av=0.002 Sg=0.001
+ARG02_0010_024   f    5.536     5.474  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_025   f    1.549     1.491  0.034  0.041  0.032  0.043  0.040  0.053 Av=0.041 Sg=0.007
+ARG02_0010_026   f    2.293     2.212  0.004  0.005  0.003  0.006  0.004  0.004 Av=0.004 Sg=0.001
+ARG02_0010_027   f    2.511     2.467  0.048  0.035  0.035  0.048  0.036  0.038 Av=0.040 Sg=0.006
+ARG02_0010_028   f    5.214     5.161  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_029   f    5.354     5.295  0.001  0.000  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+ARG02_0010_030   f    4.068     3.992  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_031   f    1.606     1.513  0.010  0.013  0.010  0.019  0.015  0.015 Av=0.014 Sg=0.004
+ARG02_0010_032   f    2.744     2.667  0.004  0.001  0.002  0.002  0.002  0.002 Av=0.002 Sg=0.001
+ARG02_0010_033   f    2.141     2.068  0.011  0.008  0.008  0.010  0.008  0.008 Av=0.009 Sg=0.001
+ARG02_0010_034   f    2.522     2.104  0.019  0.017  0.018  0.013  0.015  0.012 Av=0.016 Sg=0.003
+ARG02_0010_035   f    5.980     5.623  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_036   f    5.351     5.272  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_037   f    4.599     4.503  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_038   f    2.757     2.556  0.004  0.004  0.004  0.005  0.004  0.005 Av=0.004 Sg=0.001
+ARG02_0010_039   f    2.953     2.898  0.032  0.045  0.037  0.025  0.038  0.051 Av=0.038 Sg=0.009
+ARG02_0010_040   f    3.644     3.481  0.003  0.006  0.005  0.007  0.003  0.005 Av=0.005 Sg=0.002
+ARG02_0010_041   f    1.563     1.505  0.022  0.022  0.022  0.026  0.022  0.032 Av=0.024 Sg=0.004
+ARG02_0010_042   f    2.303     2.222  0.006  0.006  0.004  0.005  0.006  0.005 Av=0.005 Sg=0.001
+ARG02_0010_043   f    2.518     2.474  0.035  0.042  0.038  0.042  0.034  0.038 Av=0.038 Sg=0.003
+ARG02_0010_044   f    5.218     5.165  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_045   f    5.354     5.295  0.000  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+ARG02_0010_046   f    2.544     2.143  0.014  0.014  0.021  0.018  0.014  0.013 Av=0.016 Sg=0.003
+ARG02_0010_047   f    5.986     5.630  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_048   f    5.355     5.276  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_049   f    4.893     4.762  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG02_0010_050   f    4.485     4.322  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_051   f    4.107     4.048  0.001  0.001  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
+ARG03_0010_052   f    3.590     3.431  0.001  0.002  0.002  0.001  0.002  0.003 Av=0.002 Sg=0.001
+ARG03_0010_053   f    5.449     5.387  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_054   f    1.455     1.397  0.049  0.056  0.056  0.043  0.061  0.068 Av=0.056 Sg=0.008
+ARG03_0010_055   f    2.202     2.121  0.004  0.005  0.004  0.003  0.005  0.004 Av=0.004 Sg=0.001
+ARG03_0010_056   f    2.417     2.373  0.059  0.043  0.038  0.045  0.052  0.038 Av=0.046 Sg=0.009
+ARG03_0010_057   f    5.125     5.073  0.000  0.000  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_058   f    5.306     5.247  0.001  0.001  0.000  0.001  0.001  0.001 Av=0.001 Sg=0.000
+ARG03_0010_059   f    3.979     3.903  0.000  0.000  0.000  0.000  0.001  0.001 Av=0.000 Sg=0.000
+ARG03_0010_060   f    1.514     1.422  0.017  0.019  0.019  0.019  0.014  0.016 Av=0.017 Sg=0.002
+ARG03_0010_061   f    2.655     2.578  0.003  0.003  0.001  0.003  0.003  0.003 Av=0.003 Sg=0.001
+ARG03_0010_062   f    5.895     5.538  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_063   f    5.259     5.180  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_064   f    4.509     4.413  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_065   f    4.803     4.672  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_066   f    4.387     4.224  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_067   f    2.663     2.462  0.005  0.004  0.004  0.004  0.006  0.004 Av=0.005 Sg=0.001
+ARG03_0010_068   f    2.718     2.662  0.103  0.094  0.091  0.084  0.095  0.107 Av=0.096 Sg=0.008
+ARG03_0010_069   f    4.004     3.945  0.000  0.000  0.000  0.000  0.000  0.001 Av=0.000 Sg=0.000
+ARG03_0010_070   f    3.488     3.325  0.004  0.006  0.005  0.005  0.006  0.006 Av=0.005 Sg=0.001
+ARG03_0010_071   f    5.318     5.257  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_072   f    2.213     2.132  0.004  0.004  0.004  0.007  0.003  0.004 Av=0.004 Sg=0.001
+ARG03_0010_073   f    4.951     4.899  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_074   f    5.367     5.309  0.002  0.001  0.000  0.001  0.001  0.001 Av=0.001 Sg=0.000
+ARG03_0010_075   f    3.990     3.915  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_076   f    1.531     1.439  0.010  0.014  0.012  0.012  0.012  0.013 Av=0.012 Sg=0.001
+ARG03_0010_077   f    2.480     2.403  0.006  0.006  0.008  0.005  0.007  0.006 Av=0.006 Sg=0.001
+ARG03_0010_078   f    2.132     2.059  0.011  0.007  0.009  0.007  0.009  0.007 Av=0.008 Sg=0.001
+ARG03_0010_079   f    2.484     2.060  0.022  0.019  0.020  0.020  0.017  0.021 Av=0.020 Sg=0.002
+ARG03_0010_080   f    5.318     5.239  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_081   f    4.878     4.748  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG03_0010_082   f    4.399     4.236  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_083   f    6.795     6.739  0.000  0.001  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_084   f    8.049     7.989  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_085   f    7.496     7.333  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_086   f    9.395     9.333  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_087   f    5.408     5.350  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_088   f    6.153     6.072  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_089   f    6.370     6.326  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_090   f    9.072     9.019  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_091   f    9.206     9.147  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_092   f    7.929     7.853  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_093   f    5.463     5.370  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_094   f    6.603     6.526  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_095   f    6.001     5.928  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_096   f    6.369     5.945  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_097   f    9.837     9.480  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_098   f    9.207     9.128  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_099   f    8.458     8.362  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_100   f    8.748     8.617  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_101   f    8.340     8.177  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+ARG+1_0010_102   f    6.617     6.416  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLN01_0011_001   f   12.603    12.594  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLN01_0011_002   f    4.501     4.501  0.001  0.001  0.001  0.001  0.001  0.002 Av=0.001 Sg=0.000
+GLN01_0011_003   f    4.160     4.154  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLN01_0011_004   f    4.084     4.084  0.003  0.003  0.004  0.003  0.004  0.002 Av=0.003 Sg=0.001
+GLN01_0011_005   f    5.801     5.787  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLN01_0011_006   f    4.807     4.797  0.011  0.009  0.009  0.007  0.010  0.005 Av=0.009 Sg=0.002
+GLN01_0011_007   f    5.029     5.029  0.001  0.001  0.001  0.001  0.001  0.001 Av=0.001 Sg=0.000
+GLN01_0011_008   f    4.608     4.608  0.002  0.002  0.002  0.002  0.002  0.003 Av=0.002 Sg=0.000
+GLN01_0011_009   f    4.365     4.365  0.002  0.002  0.001  0.002  0.002  0.001 Av=0.002 Sg=0.000
+GLN01_0011_010   f    2.179     2.177  0.213  0.197  0.203  0.208  0.218  0.207 Av=0.208 Sg=0.007
+GLN01_0011_011   f    2.224     2.222  0.130  0.129  0.121  0.124  0.131  0.135 Av=0.128 Sg=0.005
+GLN01_0011_012   f    1.370     1.368  0.453  0.486  0.478  0.479  0.455  0.473 Av=0.470 Sg=0.013
+GLN01_0011_013   f    2.794     2.793  0.063  0.058  0.063  0.058  0.060  0.060 Av=0.060 Sg=0.002
+GLN01_0011_014   f    4.408     4.402  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLN01_0011_015   f    4.615     4.608  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+GLN01_0011_016   f    4.642     4.642  0.004  0.004  0.003  0.003  0.004  0.002 Av=0.003 Sg=0.001
+GLN01_0011_017   f    5.339     5.339  0.000  0.000  0.000  0.000  0.001  0.000 Av=0.000 Sg=0.000
+GLN01_0011_018   f    5.008     5.007  0.001  0.000  0.000  0.001  0.001  0.001 Av=0.001 Sg=0.000
+GLN01_0011_019   f    2.244     2.243  0.116  0.107  0.112  0.109  0.109  0.106 Av=0.110 Sg=0.004
+GLN01_0011_020   f    4.723     4.714  0.001  0.001  0.001  0.002  0.002  0.001 Av=0.001 Sg=0.000
+HIS01_0012_001   f   -3.908    -3.909  0.051  0.052  0.056  0.055  0.054  0.057 Av=0.054 Sg=0.002
+HIS01_0012_002   f   -3.950    -3.951  0.174  0.160  0.162  0.160  0.163  0.161 Av=0.164 Sg=0.005
+HIS01_0012_003   f   -1.034    -1.034  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS01_0012_004   f    3.331     3.331  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS01_0012_005   f   -3.901    -3.902  0.195  0.214  0.211  0.208  0.214  0.214 Av=0.209 Sg=0.008
+HIS01_0012_006   f    0.549     0.549  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS01_0012_007   f   -1.692    -1.692  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS01_0012_008   f   -1.149    -1.149  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS01_0012_009   f    1.563     1.563  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS01_0012_010   f   -1.002    -1.002  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS02_0012_011   f   -3.968    -3.969  0.051  0.048  0.052  0.048  0.052  0.053 Av=0.051 Sg=0.002
+HIS02_0012_012   f   -4.029    -4.030  0.233  0.236  0.232  0.233  0.239  0.231 Av=0.234 Sg=0.003
+HIS02_0012_013   f   -1.135    -1.135  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS02_0012_014   f    3.117     3.117  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS02_0012_015   f   -3.990    -3.991  0.296  0.289  0.284  0.296  0.277  0.283 Av=0.288 Sg=0.007
+HIS02_0012_016   f    0.419     0.419  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS02_0012_017   f   -1.819    -1.819  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS02_0012_018   f   -1.185    -1.185  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS02_0012_019   f    1.536     1.536  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS02_0012_020   f   -1.039    -1.039  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_021   f    8.121     8.120  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_022   f    8.061     8.060  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_023   f   10.962    10.962  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_024   f   15.212    15.212  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_025   f    8.099     8.098  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_026   f   12.514    12.514  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_027   f   10.277    10.277  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_028   f   10.909    10.909  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_029   f   13.632    13.632  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+HIS+1_0012_030   f   11.058    11.058  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_001   f   -6.005    -6.007  0.006  0.006  0.005  0.008  0.007  0.009 Av=0.007 Sg=0.001
+MET01_0013_002   f   -0.350    -0.353  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_003   f   -2.666    -2.666  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_004   f   -6.853    -6.867  0.000  0.000  0.000  0.002  0.000  0.000 Av=0.001 Sg=0.001
+MET01_0013_005   f   -1.645    -1.648  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_006   f   -3.258    -3.263  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_007   f    0.040     0.039  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_008   f   -2.806    -2.806  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_009   f   -6.224    -6.224  0.014  0.014  0.012  0.013  0.010  0.011 Av=0.012 Sg=0.002
+MET01_0013_010   f   -8.835    -8.835  0.692  0.697  0.726  0.711  0.712  0.700 Av=0.707 Sg=0.012
+MET01_0013_011   f   -2.691    -2.698  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_012   f   -5.274    -5.274  0.001  0.001  0.000  0.001  0.000  0.000 Av=0.001 Sg=0.000
+MET01_0013_013   f   -3.266    -3.266  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_014   f   -6.443    -6.446  0.006  0.009  0.007  0.012  0.007  0.011 Av=0.009 Sg=0.002
+MET01_0013_015   f   -8.654    -8.656  0.281  0.272  0.248  0.252  0.263  0.268 Av=0.264 Sg=0.012
+MET01_0013_016   f   -1.056    -1.063  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_017   f   -2.526    -2.530  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_018   f   -4.692    -4.696  0.000  0.000  0.000  0.001  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_019   f   -1.794    -1.802  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
+MET01_0013_020   f    0.780     0.779  0.000  0.000  0.000  0.000  0.000  0.000 Av=0.000 Sg=0.000
 

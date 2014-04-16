@@ -358,7 +358,7 @@ PROT load_pdb_binary_no_param(FILE *fp) {
                 }
 		fread(&nb_atoms,sizeof(int),1,fp);/*read in the number of atoms for the 1st conformer*/
 				
-		iatm = malloc(sizeof(int)*nb_atoms);//required to keep track of the indices the atoms of the conformer belong to
+		iatm = (int *) malloc(sizeof(int)*nb_atoms);//required to keep track of the indices the atoms of the conformer belong to
                 for(i=0; i<nb_atoms; i++) {
                         atom = read_full_header(fp);
 			iatm[i] = iatom(atom.confName, atom.name);

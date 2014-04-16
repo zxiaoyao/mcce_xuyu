@@ -46,13 +46,13 @@ int def(FILE *source, FILE *dest, int level)
             return Z_ERRNO;
         }
         flush = feof(source) ? Z_FINISH : Z_NO_FLUSH;
-        strm.next_in = in;
+        strm.next_in = (Bytef *) in;
 
         /* run deflate() on input until output buffer not full, finish
            compression if all of source has been read in */
         do {
             strm.avail_out = CHUNK;
-            strm.next_out = out;
+            strm.next_out = (Bytef *) out;
             ret = deflate(&strm, flush);    /* no bad return value */
             assert(ret != Z_STREAM_ERROR);  /* state not clobbered */
             have = CHUNK - strm.avail_out;
@@ -105,12 +105,12 @@ int inf(FILE *source, FILE *dest)
         }
         if (strm.avail_in == 0)
             break;
-        strm.next_in = in;
+        strm.next_in = (Bytef *) in;
 
         /* run inflate() on input until output buffer not full */
         do {
             strm.avail_out = CHUNK;
-            strm.next_out = out;
+            strm.next_out = (Bytef *) out;
             ret = inflate(&strm, Z_NO_FLUSH);
             assert(ret != Z_STREAM_ERROR);  /* state not clobbered */
             switch (ret) {
