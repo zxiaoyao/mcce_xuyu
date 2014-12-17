@@ -15,32 +15,46 @@ relaxation.c collect_connect.c  torsion.c       vdw_fast.c hbond_extra.c swap.c 
 check_tpl.c zip.c del_dir.c make_matrices.c\
 mem_position.c probe.c add_membrane.c    load_pdb_no_param.c
 
+SRCDIR = src
+OBJDIR = obj
+INCDIR = include
+HEADER	= $(INCDIR)/mcce.h
+EXEDIR = bin
+LIBDIR = lib
 
-LIB	= mcce.a
+SRCEXT=c
+SOURCES=$(patsubst %,$(SRCDIR)/%,$(SRC))
+OBJECTS=$(patsubst $(SRCDIR)/%,$(OBJDIR)/%, $(SOURCES:.$(SRCEXT)=.o))
 
-all:	$(LIB)
-	$(CC) $(CFLAGS) -o mcce mcce.c $(LIB) -lgdbm -lm -lz
+EXECUTABLE=$(EXEDIR)/mcce
+LIB	= $(LIBDIR)/libmcce.a
+
+CC=g++
+CFLAGS=-g -Wall
+LIBLINK = -lgdbm -lm -lz -L/home/xzhu/local/include/lib -L/home/xzhu/local/zlib/lib
+#LIBLINK = -lgdbm -lm -lz -L/home/xzhu/local/include/lib -L/home/xzhu/local/zlib/lib -L/usr/lib/x86_64-redhat-linux5E/lib64
+
+all: $(EXECUTABLE) 
+
+$(EXECUTABLE): $(LIB) $(HEADER)
+	@mkdir -p $(EXEDIR)
+	$(CC) $(CFLAGS) -o $@ $(SRCDIR)/mcce.c $(LIB) $(LIBLINK)
 	
-OBJ	= $(SRC:.c=.o)
-
-HEADER	= mcce.h
-
-$(OBJ): $(HEADER)
-
-CC      = g++
-CFLAGS  = -g -Wall
-
-.c.o:
-	$(CC) $(CFLAGS) -c $*.c
-
-AR      = ar
+	
+AR = ar
 ARFLAGS = rvs
-
-
-$(LIB): $(OBJ)
-	$(AR) $(ARFLAGS) $(LIB) $(OBJ)
-
+$(LIB): $(OBJECTS) $(HEADER)
+	@mkdir -p $(LIBDIR)
+	$(AR) $(ARFLAGS) $(LIB) $(OBJECTS)	
+	
+	
+$(OBJDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
+	@mkdir -p $(OBJDIR)
+	$(CC) $(CFLAGS) -o $@ -c $<	
+	
 	
 clean:
-	rm -f *.o
+	rm -f *.o $(OBJDIR)/*.o $(LIB) $(EXECUTABLE)
+	
+.PHONY: clean
 
