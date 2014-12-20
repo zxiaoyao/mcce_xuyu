@@ -30,8 +30,8 @@ EXECUTABLE=$(EXEDIR)/mcce
 LIB	= $(LIBDIR)/libmcce.a
 
 CC=g++
-CFLAGS=-g -Wall
-LIBLINK = -lgdbm -lm -lz -L/home/xzhu/local/include/lib -L/home/xzhu/local/zlib/lib
+CFLAGS=-g -Wall -I/usr/local/include
+LIBLINK = -lgdbm -lm -lz -L/home/xzhu/local/include/lib -L/home/xzhu/local/zlib/lib -L/usr/local/lib
 #LIBLINK = -lgdbm -lm -lz -L/home/xzhu/local/include/lib -L/home/xzhu/local/zlib/lib -L/usr/lib/x86_64-redhat-linux5E/lib64
 
 all: $(EXECUTABLE) 
